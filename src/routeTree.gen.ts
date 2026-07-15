@@ -10,33 +10,474 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as TypographyTextStrokeShadowRouteImport } from './routes/typography/text-stroke-shadow'
+import { Route as TypographyLineHeightCalculatorRouteImport } from './routes/typography/line-height-calculator'
+import { Route as TypographyFontPairPreviewerRouteImport } from './routes/typography/font-pair-previewer'
+import { Route as TypographyFluidTypeScaleRouteImport } from './routes/typography/fluid-type-scale'
+import { Route as PreviewResponsiveBreakpointsRouteImport } from './routes/preview/responsive-breakpoints'
+import { Route as PreviewOpenGraphRouteImport } from './routes/preview/open-graph'
+import { Route as PreviewJsonLdBuilderRouteImport } from './routes/preview/json-ld-builder'
+import { Route as GeneratorsUuidRouteImport } from './routes/generators/uuid'
+import { Route as GeneratorsRobotsTxtRouteImport } from './routes/generators/robots-txt'
+import { Route as GeneratorsMetaTagRouteImport } from './routes/generators/meta-tag'
+import { Route as GeneratorsLoremIpsumRouteImport } from './routes/generators/lorem-ipsum'
+import { Route as GeneratorsFaviconRouteImport } from './routes/generators/favicon'
+import { Route as EncodingUrlEncodeRouteImport } from './routes/encoding/url-encode'
+import { Route as EncodingJwtDecoderRouteImport } from './routes/encoding/jwt-decoder'
+import { Route as EncodingJsonFormatterRouteImport } from './routes/encoding/json-formatter'
+import { Route as EncodingHtmlEntityEncoderRouteImport } from './routes/encoding/html-entity-encoder'
+import { Route as EncodingBase64RouteImport } from './routes/encoding/base64'
+import { Route as CssGridGeneratorRouteImport } from './routes/css/grid-generator'
+import { Route as CssGlassmorphismRouteImport } from './routes/css/glassmorphism'
+import { Route as CssEasingEditorRouteImport } from './routes/css/easing-editor'
+import { Route as CssBoxShadowRouteImport } from './routes/css/box-shadow'
+import { Route as CssBorderRadiusRouteImport } from './routes/css/border-radius'
+import { Route as ConvertersSvgOptimizerRouteImport } from './routes/converters/svg-optimizer'
+import { Route as ConvertersPxRemRouteImport } from './routes/converters/px-rem'
+import { Route as ConvertersMarkdownHtmlRouteImport } from './routes/converters/markdown-html'
+import { Route as ConvertersImageToBase64RouteImport } from './routes/converters/image-to-base64'
+import { Route as ConvertersImageFormatConverterRouteImport } from './routes/converters/image-format-converter'
+import { Route as ColorsTailwindColorFinderRouteImport } from './routes/colors/tailwind-color-finder'
+import { Route as ColorsPaletteGeneratorRouteImport } from './routes/colors/palette-generator'
+import { Route as ColorsGradientGeneratorRouteImport } from './routes/colors/gradient-generator'
+import { Route as ColorsContrastCheckerRouteImport } from './routes/colors/contrast-checker'
+import { Route as ColorsColorConverterRouteImport } from './routes/colors/color-converter'
+import { Route as ColorsColorBlindnessRouteImport } from './routes/colors/color-blindness'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TypographyTextStrokeShadowRoute =
+  TypographyTextStrokeShadowRouteImport.update({
+    id: '/typography/text-stroke-shadow',
+    path: '/typography/text-stroke-shadow',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TypographyLineHeightCalculatorRoute =
+  TypographyLineHeightCalculatorRouteImport.update({
+    id: '/typography/line-height-calculator',
+    path: '/typography/line-height-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TypographyFontPairPreviewerRoute =
+  TypographyFontPairPreviewerRouteImport.update({
+    id: '/typography/font-pair-previewer',
+    path: '/typography/font-pair-previewer',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TypographyFluidTypeScaleRoute =
+  TypographyFluidTypeScaleRouteImport.update({
+    id: '/typography/fluid-type-scale',
+    path: '/typography/fluid-type-scale',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PreviewResponsiveBreakpointsRoute =
+  PreviewResponsiveBreakpointsRouteImport.update({
+    id: '/preview/responsive-breakpoints',
+    path: '/preview/responsive-breakpoints',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PreviewOpenGraphRoute = PreviewOpenGraphRouteImport.update({
+  id: '/preview/open-graph',
+  path: '/preview/open-graph',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreviewJsonLdBuilderRoute = PreviewJsonLdBuilderRouteImport.update({
+  id: '/preview/json-ld-builder',
+  path: '/preview/json-ld-builder',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GeneratorsUuidRoute = GeneratorsUuidRouteImport.update({
+  id: '/generators/uuid',
+  path: '/generators/uuid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GeneratorsRobotsTxtRoute = GeneratorsRobotsTxtRouteImport.update({
+  id: '/generators/robots-txt',
+  path: '/generators/robots-txt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GeneratorsMetaTagRoute = GeneratorsMetaTagRouteImport.update({
+  id: '/generators/meta-tag',
+  path: '/generators/meta-tag',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GeneratorsLoremIpsumRoute = GeneratorsLoremIpsumRouteImport.update({
+  id: '/generators/lorem-ipsum',
+  path: '/generators/lorem-ipsum',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GeneratorsFaviconRoute = GeneratorsFaviconRouteImport.update({
+  id: '/generators/favicon',
+  path: '/generators/favicon',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EncodingUrlEncodeRoute = EncodingUrlEncodeRouteImport.update({
+  id: '/encoding/url-encode',
+  path: '/encoding/url-encode',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EncodingJwtDecoderRoute = EncodingJwtDecoderRouteImport.update({
+  id: '/encoding/jwt-decoder',
+  path: '/encoding/jwt-decoder',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EncodingJsonFormatterRoute = EncodingJsonFormatterRouteImport.update({
+  id: '/encoding/json-formatter',
+  path: '/encoding/json-formatter',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EncodingHtmlEntityEncoderRoute =
+  EncodingHtmlEntityEncoderRouteImport.update({
+    id: '/encoding/html-entity-encoder',
+    path: '/encoding/html-entity-encoder',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EncodingBase64Route = EncodingBase64RouteImport.update({
+  id: '/encoding/base64',
+  path: '/encoding/base64',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CssGridGeneratorRoute = CssGridGeneratorRouteImport.update({
+  id: '/css/grid-generator',
+  path: '/css/grid-generator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CssGlassmorphismRoute = CssGlassmorphismRouteImport.update({
+  id: '/css/glassmorphism',
+  path: '/css/glassmorphism',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CssEasingEditorRoute = CssEasingEditorRouteImport.update({
+  id: '/css/easing-editor',
+  path: '/css/easing-editor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CssBoxShadowRoute = CssBoxShadowRouteImport.update({
+  id: '/css/box-shadow',
+  path: '/css/box-shadow',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CssBorderRadiusRoute = CssBorderRadiusRouteImport.update({
+  id: '/css/border-radius',
+  path: '/css/border-radius',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConvertersSvgOptimizerRoute = ConvertersSvgOptimizerRouteImport.update({
+  id: '/converters/svg-optimizer',
+  path: '/converters/svg-optimizer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConvertersPxRemRoute = ConvertersPxRemRouteImport.update({
+  id: '/converters/px-rem',
+  path: '/converters/px-rem',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConvertersMarkdownHtmlRoute = ConvertersMarkdownHtmlRouteImport.update({
+  id: '/converters/markdown-html',
+  path: '/converters/markdown-html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConvertersImageToBase64Route = ConvertersImageToBase64RouteImport.update({
+  id: '/converters/image-to-base64',
+  path: '/converters/image-to-base64',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConvertersImageFormatConverterRoute =
+  ConvertersImageFormatConverterRouteImport.update({
+    id: '/converters/image-format-converter',
+    path: '/converters/image-format-converter',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ColorsTailwindColorFinderRoute =
+  ColorsTailwindColorFinderRouteImport.update({
+    id: '/colors/tailwind-color-finder',
+    path: '/colors/tailwind-color-finder',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ColorsPaletteGeneratorRoute = ColorsPaletteGeneratorRouteImport.update({
+  id: '/colors/palette-generator',
+  path: '/colors/palette-generator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ColorsGradientGeneratorRoute = ColorsGradientGeneratorRouteImport.update({
+  id: '/colors/gradient-generator',
+  path: '/colors/gradient-generator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ColorsContrastCheckerRoute = ColorsContrastCheckerRouteImport.update({
+  id: '/colors/contrast-checker',
+  path: '/colors/contrast-checker',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ColorsColorConverterRoute = ColorsColorConverterRouteImport.update({
+  id: '/colors/color-converter',
+  path: '/colors/color-converter',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ColorsColorBlindnessRoute = ColorsColorBlindnessRouteImport.update({
+  id: '/colors/color-blindness',
+  path: '/colors/color-blindness',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/colors/color-blindness': typeof ColorsColorBlindnessRoute
+  '/colors/color-converter': typeof ColorsColorConverterRoute
+  '/colors/contrast-checker': typeof ColorsContrastCheckerRoute
+  '/colors/gradient-generator': typeof ColorsGradientGeneratorRoute
+  '/colors/palette-generator': typeof ColorsPaletteGeneratorRoute
+  '/colors/tailwind-color-finder': typeof ColorsTailwindColorFinderRoute
+  '/converters/image-format-converter': typeof ConvertersImageFormatConverterRoute
+  '/converters/image-to-base64': typeof ConvertersImageToBase64Route
+  '/converters/markdown-html': typeof ConvertersMarkdownHtmlRoute
+  '/converters/px-rem': typeof ConvertersPxRemRoute
+  '/converters/svg-optimizer': typeof ConvertersSvgOptimizerRoute
+  '/css/border-radius': typeof CssBorderRadiusRoute
+  '/css/box-shadow': typeof CssBoxShadowRoute
+  '/css/easing-editor': typeof CssEasingEditorRoute
+  '/css/glassmorphism': typeof CssGlassmorphismRoute
+  '/css/grid-generator': typeof CssGridGeneratorRoute
+  '/encoding/base64': typeof EncodingBase64Route
+  '/encoding/html-entity-encoder': typeof EncodingHtmlEntityEncoderRoute
+  '/encoding/json-formatter': typeof EncodingJsonFormatterRoute
+  '/encoding/jwt-decoder': typeof EncodingJwtDecoderRoute
+  '/encoding/url-encode': typeof EncodingUrlEncodeRoute
+  '/generators/favicon': typeof GeneratorsFaviconRoute
+  '/generators/lorem-ipsum': typeof GeneratorsLoremIpsumRoute
+  '/generators/meta-tag': typeof GeneratorsMetaTagRoute
+  '/generators/robots-txt': typeof GeneratorsRobotsTxtRoute
+  '/generators/uuid': typeof GeneratorsUuidRoute
+  '/preview/json-ld-builder': typeof PreviewJsonLdBuilderRoute
+  '/preview/open-graph': typeof PreviewOpenGraphRoute
+  '/preview/responsive-breakpoints': typeof PreviewResponsiveBreakpointsRoute
+  '/typography/fluid-type-scale': typeof TypographyFluidTypeScaleRoute
+  '/typography/font-pair-previewer': typeof TypographyFontPairPreviewerRoute
+  '/typography/line-height-calculator': typeof TypographyLineHeightCalculatorRoute
+  '/typography/text-stroke-shadow': typeof TypographyTextStrokeShadowRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/colors/color-blindness': typeof ColorsColorBlindnessRoute
+  '/colors/color-converter': typeof ColorsColorConverterRoute
+  '/colors/contrast-checker': typeof ColorsContrastCheckerRoute
+  '/colors/gradient-generator': typeof ColorsGradientGeneratorRoute
+  '/colors/palette-generator': typeof ColorsPaletteGeneratorRoute
+  '/colors/tailwind-color-finder': typeof ColorsTailwindColorFinderRoute
+  '/converters/image-format-converter': typeof ConvertersImageFormatConverterRoute
+  '/converters/image-to-base64': typeof ConvertersImageToBase64Route
+  '/converters/markdown-html': typeof ConvertersMarkdownHtmlRoute
+  '/converters/px-rem': typeof ConvertersPxRemRoute
+  '/converters/svg-optimizer': typeof ConvertersSvgOptimizerRoute
+  '/css/border-radius': typeof CssBorderRadiusRoute
+  '/css/box-shadow': typeof CssBoxShadowRoute
+  '/css/easing-editor': typeof CssEasingEditorRoute
+  '/css/glassmorphism': typeof CssGlassmorphismRoute
+  '/css/grid-generator': typeof CssGridGeneratorRoute
+  '/encoding/base64': typeof EncodingBase64Route
+  '/encoding/html-entity-encoder': typeof EncodingHtmlEntityEncoderRoute
+  '/encoding/json-formatter': typeof EncodingJsonFormatterRoute
+  '/encoding/jwt-decoder': typeof EncodingJwtDecoderRoute
+  '/encoding/url-encode': typeof EncodingUrlEncodeRoute
+  '/generators/favicon': typeof GeneratorsFaviconRoute
+  '/generators/lorem-ipsum': typeof GeneratorsLoremIpsumRoute
+  '/generators/meta-tag': typeof GeneratorsMetaTagRoute
+  '/generators/robots-txt': typeof GeneratorsRobotsTxtRoute
+  '/generators/uuid': typeof GeneratorsUuidRoute
+  '/preview/json-ld-builder': typeof PreviewJsonLdBuilderRoute
+  '/preview/open-graph': typeof PreviewOpenGraphRoute
+  '/preview/responsive-breakpoints': typeof PreviewResponsiveBreakpointsRoute
+  '/typography/fluid-type-scale': typeof TypographyFluidTypeScaleRoute
+  '/typography/font-pair-previewer': typeof TypographyFontPairPreviewerRoute
+  '/typography/line-height-calculator': typeof TypographyLineHeightCalculatorRoute
+  '/typography/text-stroke-shadow': typeof TypographyTextStrokeShadowRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/colors/color-blindness': typeof ColorsColorBlindnessRoute
+  '/colors/color-converter': typeof ColorsColorConverterRoute
+  '/colors/contrast-checker': typeof ColorsContrastCheckerRoute
+  '/colors/gradient-generator': typeof ColorsGradientGeneratorRoute
+  '/colors/palette-generator': typeof ColorsPaletteGeneratorRoute
+  '/colors/tailwind-color-finder': typeof ColorsTailwindColorFinderRoute
+  '/converters/image-format-converter': typeof ConvertersImageFormatConverterRoute
+  '/converters/image-to-base64': typeof ConvertersImageToBase64Route
+  '/converters/markdown-html': typeof ConvertersMarkdownHtmlRoute
+  '/converters/px-rem': typeof ConvertersPxRemRoute
+  '/converters/svg-optimizer': typeof ConvertersSvgOptimizerRoute
+  '/css/border-radius': typeof CssBorderRadiusRoute
+  '/css/box-shadow': typeof CssBoxShadowRoute
+  '/css/easing-editor': typeof CssEasingEditorRoute
+  '/css/glassmorphism': typeof CssGlassmorphismRoute
+  '/css/grid-generator': typeof CssGridGeneratorRoute
+  '/encoding/base64': typeof EncodingBase64Route
+  '/encoding/html-entity-encoder': typeof EncodingHtmlEntityEncoderRoute
+  '/encoding/json-formatter': typeof EncodingJsonFormatterRoute
+  '/encoding/jwt-decoder': typeof EncodingJwtDecoderRoute
+  '/encoding/url-encode': typeof EncodingUrlEncodeRoute
+  '/generators/favicon': typeof GeneratorsFaviconRoute
+  '/generators/lorem-ipsum': typeof GeneratorsLoremIpsumRoute
+  '/generators/meta-tag': typeof GeneratorsMetaTagRoute
+  '/generators/robots-txt': typeof GeneratorsRobotsTxtRoute
+  '/generators/uuid': typeof GeneratorsUuidRoute
+  '/preview/json-ld-builder': typeof PreviewJsonLdBuilderRoute
+  '/preview/open-graph': typeof PreviewOpenGraphRoute
+  '/preview/responsive-breakpoints': typeof PreviewResponsiveBreakpointsRoute
+  '/typography/fluid-type-scale': typeof TypographyFluidTypeScaleRoute
+  '/typography/font-pair-previewer': typeof TypographyFontPairPreviewerRoute
+  '/typography/line-height-calculator': typeof TypographyLineHeightCalculatorRoute
+  '/typography/text-stroke-shadow': typeof TypographyTextStrokeShadowRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/colors/color-blindness'
+    | '/colors/color-converter'
+    | '/colors/contrast-checker'
+    | '/colors/gradient-generator'
+    | '/colors/palette-generator'
+    | '/colors/tailwind-color-finder'
+    | '/converters/image-format-converter'
+    | '/converters/image-to-base64'
+    | '/converters/markdown-html'
+    | '/converters/px-rem'
+    | '/converters/svg-optimizer'
+    | '/css/border-radius'
+    | '/css/box-shadow'
+    | '/css/easing-editor'
+    | '/css/glassmorphism'
+    | '/css/grid-generator'
+    | '/encoding/base64'
+    | '/encoding/html-entity-encoder'
+    | '/encoding/json-formatter'
+    | '/encoding/jwt-decoder'
+    | '/encoding/url-encode'
+    | '/generators/favicon'
+    | '/generators/lorem-ipsum'
+    | '/generators/meta-tag'
+    | '/generators/robots-txt'
+    | '/generators/uuid'
+    | '/preview/json-ld-builder'
+    | '/preview/open-graph'
+    | '/preview/responsive-breakpoints'
+    | '/typography/fluid-type-scale'
+    | '/typography/font-pair-previewer'
+    | '/typography/line-height-calculator'
+    | '/typography/text-stroke-shadow'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/colors/color-blindness'
+    | '/colors/color-converter'
+    | '/colors/contrast-checker'
+    | '/colors/gradient-generator'
+    | '/colors/palette-generator'
+    | '/colors/tailwind-color-finder'
+    | '/converters/image-format-converter'
+    | '/converters/image-to-base64'
+    | '/converters/markdown-html'
+    | '/converters/px-rem'
+    | '/converters/svg-optimizer'
+    | '/css/border-radius'
+    | '/css/box-shadow'
+    | '/css/easing-editor'
+    | '/css/glassmorphism'
+    | '/css/grid-generator'
+    | '/encoding/base64'
+    | '/encoding/html-entity-encoder'
+    | '/encoding/json-formatter'
+    | '/encoding/jwt-decoder'
+    | '/encoding/url-encode'
+    | '/generators/favicon'
+    | '/generators/lorem-ipsum'
+    | '/generators/meta-tag'
+    | '/generators/robots-txt'
+    | '/generators/uuid'
+    | '/preview/json-ld-builder'
+    | '/preview/open-graph'
+    | '/preview/responsive-breakpoints'
+    | '/typography/fluid-type-scale'
+    | '/typography/font-pair-previewer'
+    | '/typography/line-height-calculator'
+    | '/typography/text-stroke-shadow'
+  id:
+    | '__root__'
+    | '/'
+    | '/colors/color-blindness'
+    | '/colors/color-converter'
+    | '/colors/contrast-checker'
+    | '/colors/gradient-generator'
+    | '/colors/palette-generator'
+    | '/colors/tailwind-color-finder'
+    | '/converters/image-format-converter'
+    | '/converters/image-to-base64'
+    | '/converters/markdown-html'
+    | '/converters/px-rem'
+    | '/converters/svg-optimizer'
+    | '/css/border-radius'
+    | '/css/box-shadow'
+    | '/css/easing-editor'
+    | '/css/glassmorphism'
+    | '/css/grid-generator'
+    | '/encoding/base64'
+    | '/encoding/html-entity-encoder'
+    | '/encoding/json-formatter'
+    | '/encoding/jwt-decoder'
+    | '/encoding/url-encode'
+    | '/generators/favicon'
+    | '/generators/lorem-ipsum'
+    | '/generators/meta-tag'
+    | '/generators/robots-txt'
+    | '/generators/uuid'
+    | '/preview/json-ld-builder'
+    | '/preview/open-graph'
+    | '/preview/responsive-breakpoints'
+    | '/typography/fluid-type-scale'
+    | '/typography/font-pair-previewer'
+    | '/typography/line-height-calculator'
+    | '/typography/text-stroke-shadow'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ColorsColorBlindnessRoute: typeof ColorsColorBlindnessRoute
+  ColorsColorConverterRoute: typeof ColorsColorConverterRoute
+  ColorsContrastCheckerRoute: typeof ColorsContrastCheckerRoute
+  ColorsGradientGeneratorRoute: typeof ColorsGradientGeneratorRoute
+  ColorsPaletteGeneratorRoute: typeof ColorsPaletteGeneratorRoute
+  ColorsTailwindColorFinderRoute: typeof ColorsTailwindColorFinderRoute
+  ConvertersImageFormatConverterRoute: typeof ConvertersImageFormatConverterRoute
+  ConvertersImageToBase64Route: typeof ConvertersImageToBase64Route
+  ConvertersMarkdownHtmlRoute: typeof ConvertersMarkdownHtmlRoute
+  ConvertersPxRemRoute: typeof ConvertersPxRemRoute
+  ConvertersSvgOptimizerRoute: typeof ConvertersSvgOptimizerRoute
+  CssBorderRadiusRoute: typeof CssBorderRadiusRoute
+  CssBoxShadowRoute: typeof CssBoxShadowRoute
+  CssEasingEditorRoute: typeof CssEasingEditorRoute
+  CssGlassmorphismRoute: typeof CssGlassmorphismRoute
+  CssGridGeneratorRoute: typeof CssGridGeneratorRoute
+  EncodingBase64Route: typeof EncodingBase64Route
+  EncodingHtmlEntityEncoderRoute: typeof EncodingHtmlEntityEncoderRoute
+  EncodingJsonFormatterRoute: typeof EncodingJsonFormatterRoute
+  EncodingJwtDecoderRoute: typeof EncodingJwtDecoderRoute
+  EncodingUrlEncodeRoute: typeof EncodingUrlEncodeRoute
+  GeneratorsFaviconRoute: typeof GeneratorsFaviconRoute
+  GeneratorsLoremIpsumRoute: typeof GeneratorsLoremIpsumRoute
+  GeneratorsMetaTagRoute: typeof GeneratorsMetaTagRoute
+  GeneratorsRobotsTxtRoute: typeof GeneratorsRobotsTxtRoute
+  GeneratorsUuidRoute: typeof GeneratorsUuidRoute
+  PreviewJsonLdBuilderRoute: typeof PreviewJsonLdBuilderRoute
+  PreviewOpenGraphRoute: typeof PreviewOpenGraphRoute
+  PreviewResponsiveBreakpointsRoute: typeof PreviewResponsiveBreakpointsRoute
+  TypographyFluidTypeScaleRoute: typeof TypographyFluidTypeScaleRoute
+  TypographyFontPairPreviewerRoute: typeof TypographyFontPairPreviewerRoute
+  TypographyLineHeightCalculatorRoute: typeof TypographyLineHeightCalculatorRoute
+  TypographyTextStrokeShadowRoute: typeof TypographyTextStrokeShadowRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +489,275 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/typography/text-stroke-shadow': {
+      id: '/typography/text-stroke-shadow'
+      path: '/typography/text-stroke-shadow'
+      fullPath: '/typography/text-stroke-shadow'
+      preLoaderRoute: typeof TypographyTextStrokeShadowRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/typography/line-height-calculator': {
+      id: '/typography/line-height-calculator'
+      path: '/typography/line-height-calculator'
+      fullPath: '/typography/line-height-calculator'
+      preLoaderRoute: typeof TypographyLineHeightCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/typography/font-pair-previewer': {
+      id: '/typography/font-pair-previewer'
+      path: '/typography/font-pair-previewer'
+      fullPath: '/typography/font-pair-previewer'
+      preLoaderRoute: typeof TypographyFontPairPreviewerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/typography/fluid-type-scale': {
+      id: '/typography/fluid-type-scale'
+      path: '/typography/fluid-type-scale'
+      fullPath: '/typography/fluid-type-scale'
+      preLoaderRoute: typeof TypographyFluidTypeScaleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/preview/responsive-breakpoints': {
+      id: '/preview/responsive-breakpoints'
+      path: '/preview/responsive-breakpoints'
+      fullPath: '/preview/responsive-breakpoints'
+      preLoaderRoute: typeof PreviewResponsiveBreakpointsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/preview/open-graph': {
+      id: '/preview/open-graph'
+      path: '/preview/open-graph'
+      fullPath: '/preview/open-graph'
+      preLoaderRoute: typeof PreviewOpenGraphRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/preview/json-ld-builder': {
+      id: '/preview/json-ld-builder'
+      path: '/preview/json-ld-builder'
+      fullPath: '/preview/json-ld-builder'
+      preLoaderRoute: typeof PreviewJsonLdBuilderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/generators/uuid': {
+      id: '/generators/uuid'
+      path: '/generators/uuid'
+      fullPath: '/generators/uuid'
+      preLoaderRoute: typeof GeneratorsUuidRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/generators/robots-txt': {
+      id: '/generators/robots-txt'
+      path: '/generators/robots-txt'
+      fullPath: '/generators/robots-txt'
+      preLoaderRoute: typeof GeneratorsRobotsTxtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/generators/meta-tag': {
+      id: '/generators/meta-tag'
+      path: '/generators/meta-tag'
+      fullPath: '/generators/meta-tag'
+      preLoaderRoute: typeof GeneratorsMetaTagRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/generators/lorem-ipsum': {
+      id: '/generators/lorem-ipsum'
+      path: '/generators/lorem-ipsum'
+      fullPath: '/generators/lorem-ipsum'
+      preLoaderRoute: typeof GeneratorsLoremIpsumRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/generators/favicon': {
+      id: '/generators/favicon'
+      path: '/generators/favicon'
+      fullPath: '/generators/favicon'
+      preLoaderRoute: typeof GeneratorsFaviconRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/encoding/url-encode': {
+      id: '/encoding/url-encode'
+      path: '/encoding/url-encode'
+      fullPath: '/encoding/url-encode'
+      preLoaderRoute: typeof EncodingUrlEncodeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/encoding/jwt-decoder': {
+      id: '/encoding/jwt-decoder'
+      path: '/encoding/jwt-decoder'
+      fullPath: '/encoding/jwt-decoder'
+      preLoaderRoute: typeof EncodingJwtDecoderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/encoding/json-formatter': {
+      id: '/encoding/json-formatter'
+      path: '/encoding/json-formatter'
+      fullPath: '/encoding/json-formatter'
+      preLoaderRoute: typeof EncodingJsonFormatterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/encoding/html-entity-encoder': {
+      id: '/encoding/html-entity-encoder'
+      path: '/encoding/html-entity-encoder'
+      fullPath: '/encoding/html-entity-encoder'
+      preLoaderRoute: typeof EncodingHtmlEntityEncoderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/encoding/base64': {
+      id: '/encoding/base64'
+      path: '/encoding/base64'
+      fullPath: '/encoding/base64'
+      preLoaderRoute: typeof EncodingBase64RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/css/grid-generator': {
+      id: '/css/grid-generator'
+      path: '/css/grid-generator'
+      fullPath: '/css/grid-generator'
+      preLoaderRoute: typeof CssGridGeneratorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/css/glassmorphism': {
+      id: '/css/glassmorphism'
+      path: '/css/glassmorphism'
+      fullPath: '/css/glassmorphism'
+      preLoaderRoute: typeof CssGlassmorphismRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/css/easing-editor': {
+      id: '/css/easing-editor'
+      path: '/css/easing-editor'
+      fullPath: '/css/easing-editor'
+      preLoaderRoute: typeof CssEasingEditorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/css/box-shadow': {
+      id: '/css/box-shadow'
+      path: '/css/box-shadow'
+      fullPath: '/css/box-shadow'
+      preLoaderRoute: typeof CssBoxShadowRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/css/border-radius': {
+      id: '/css/border-radius'
+      path: '/css/border-radius'
+      fullPath: '/css/border-radius'
+      preLoaderRoute: typeof CssBorderRadiusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/converters/svg-optimizer': {
+      id: '/converters/svg-optimizer'
+      path: '/converters/svg-optimizer'
+      fullPath: '/converters/svg-optimizer'
+      preLoaderRoute: typeof ConvertersSvgOptimizerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/converters/px-rem': {
+      id: '/converters/px-rem'
+      path: '/converters/px-rem'
+      fullPath: '/converters/px-rem'
+      preLoaderRoute: typeof ConvertersPxRemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/converters/markdown-html': {
+      id: '/converters/markdown-html'
+      path: '/converters/markdown-html'
+      fullPath: '/converters/markdown-html'
+      preLoaderRoute: typeof ConvertersMarkdownHtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/converters/image-to-base64': {
+      id: '/converters/image-to-base64'
+      path: '/converters/image-to-base64'
+      fullPath: '/converters/image-to-base64'
+      preLoaderRoute: typeof ConvertersImageToBase64RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/converters/image-format-converter': {
+      id: '/converters/image-format-converter'
+      path: '/converters/image-format-converter'
+      fullPath: '/converters/image-format-converter'
+      preLoaderRoute: typeof ConvertersImageFormatConverterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/colors/tailwind-color-finder': {
+      id: '/colors/tailwind-color-finder'
+      path: '/colors/tailwind-color-finder'
+      fullPath: '/colors/tailwind-color-finder'
+      preLoaderRoute: typeof ColorsTailwindColorFinderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/colors/palette-generator': {
+      id: '/colors/palette-generator'
+      path: '/colors/palette-generator'
+      fullPath: '/colors/palette-generator'
+      preLoaderRoute: typeof ColorsPaletteGeneratorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/colors/gradient-generator': {
+      id: '/colors/gradient-generator'
+      path: '/colors/gradient-generator'
+      fullPath: '/colors/gradient-generator'
+      preLoaderRoute: typeof ColorsGradientGeneratorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/colors/contrast-checker': {
+      id: '/colors/contrast-checker'
+      path: '/colors/contrast-checker'
+      fullPath: '/colors/contrast-checker'
+      preLoaderRoute: typeof ColorsContrastCheckerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/colors/color-converter': {
+      id: '/colors/color-converter'
+      path: '/colors/color-converter'
+      fullPath: '/colors/color-converter'
+      preLoaderRoute: typeof ColorsColorConverterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/colors/color-blindness': {
+      id: '/colors/color-blindness'
+      path: '/colors/color-blindness'
+      fullPath: '/colors/color-blindness'
+      preLoaderRoute: typeof ColorsColorBlindnessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ColorsColorBlindnessRoute: ColorsColorBlindnessRoute,
+  ColorsColorConverterRoute: ColorsColorConverterRoute,
+  ColorsContrastCheckerRoute: ColorsContrastCheckerRoute,
+  ColorsGradientGeneratorRoute: ColorsGradientGeneratorRoute,
+  ColorsPaletteGeneratorRoute: ColorsPaletteGeneratorRoute,
+  ColorsTailwindColorFinderRoute: ColorsTailwindColorFinderRoute,
+  ConvertersImageFormatConverterRoute: ConvertersImageFormatConverterRoute,
+  ConvertersImageToBase64Route: ConvertersImageToBase64Route,
+  ConvertersMarkdownHtmlRoute: ConvertersMarkdownHtmlRoute,
+  ConvertersPxRemRoute: ConvertersPxRemRoute,
+  ConvertersSvgOptimizerRoute: ConvertersSvgOptimizerRoute,
+  CssBorderRadiusRoute: CssBorderRadiusRoute,
+  CssBoxShadowRoute: CssBoxShadowRoute,
+  CssEasingEditorRoute: CssEasingEditorRoute,
+  CssGlassmorphismRoute: CssGlassmorphismRoute,
+  CssGridGeneratorRoute: CssGridGeneratorRoute,
+  EncodingBase64Route: EncodingBase64Route,
+  EncodingHtmlEntityEncoderRoute: EncodingHtmlEntityEncoderRoute,
+  EncodingJsonFormatterRoute: EncodingJsonFormatterRoute,
+  EncodingJwtDecoderRoute: EncodingJwtDecoderRoute,
+  EncodingUrlEncodeRoute: EncodingUrlEncodeRoute,
+  GeneratorsFaviconRoute: GeneratorsFaviconRoute,
+  GeneratorsLoremIpsumRoute: GeneratorsLoremIpsumRoute,
+  GeneratorsMetaTagRoute: GeneratorsMetaTagRoute,
+  GeneratorsRobotsTxtRoute: GeneratorsRobotsTxtRoute,
+  GeneratorsUuidRoute: GeneratorsUuidRoute,
+  PreviewJsonLdBuilderRoute: PreviewJsonLdBuilderRoute,
+  PreviewOpenGraphRoute: PreviewOpenGraphRoute,
+  PreviewResponsiveBreakpointsRoute: PreviewResponsiveBreakpointsRoute,
+  TypographyFluidTypeScaleRoute: TypographyFluidTypeScaleRoute,
+  TypographyFontPairPreviewerRoute: TypographyFontPairPreviewerRoute,
+  TypographyLineHeightCalculatorRoute: TypographyLineHeightCalculatorRoute,
+  TypographyTextStrokeShadowRoute: TypographyTextStrokeShadowRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
