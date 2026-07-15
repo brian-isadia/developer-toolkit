@@ -1,21 +1,48 @@
+import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { ToolPageLayout } from "#/components/tool-page-layout";
+import { CodeOutput } from "#/components/code-output";
+import { ColorSwatch } from "#/components/color-swatch";
+import { parseColor, formatHex, formatRgb, formatHsl, formatOklch } from "#/lib/color";
+import { Input } from "#/components/ui/input";
+import { Label } from "#/components/ui/label";
 
 export const Route = createFileRoute("/colors/color-converter")({
-	component: RouteComponent,
-	head: () => ({
-		meta: [
-			{ title: "Color Format Converter | WebToolkit" },
-			{ name: "description", content: "Convert between Hex, RGB, HSL, and OKLCH color formats" }
-		]
-	})
+	component: ColorConverter,
 });
 
-function RouteComponent() {
+function ColorConverter() {
+	const [input, setInput] = useState("#3b82f6");
+	const parsed = parseColor(input);
+
 	return (
 		<ToolPageLayout>
-			<div className="flex items-center justify-center min-h-[400px] text-muted-foreground">
-				Color Format Converter tool coming soon.
+			<div className="grid gap-8 max-w-2xl">
+				<div className="space-y-4">
+					<Label htmlFor="color-input">Color Value</Label>
+					<div className="flex gap-4">
+						<ColorSwatch color={parsed?.hex ?? "transparent"} size="lg" />
+						<Input
+							id="color-input"
+							value={input}
+							onChange={(e) => setInput(e.target.value)}
+							placeholder="e.g. #3b82f6, rgb(59, 130, 246), hsl(217, 91%, 60%)"
+							className="h-16 text-lg"
+						/>
+					</div>
+					{!parsed && input && (
+						<p className="text-sm text-destructive">Invalid color format</p>
+					)}
+				</div>
+
+				{parsed && (
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+						<CodeOutput label="Hex" code={parsed.hex} />
+						<CodeOutput label="RGB" code={formatRgb(parsed.rgb)} />
+						<CodeOutput label="HSL" code={formatHsl(parsed.hsl)} />
+						<CodeOutput label="OKLCH" code={formatOklch(parsed.oklch)} />
+					</div>
+				)}
 			</div>
 		</ToolPageLayout>
 	);
