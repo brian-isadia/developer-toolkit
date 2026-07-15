@@ -10,6 +10,10 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as UtilitiesRegexTesterRouteImport } from './routes/utilities/regex-tester'
+import { Route as UtilitiesMarkdownPreviewRouteImport } from './routes/utilities/markdown-preview'
+import { Route as UtilitiesKeycodeInfoRouteImport } from './routes/utilities/keycode-info'
+import { Route as UtilitiesCronParserRouteImport } from './routes/utilities/cron-parser'
 import { Route as TypographyTextStrokeShadowRouteImport } from './routes/typography/text-stroke-shadow'
 import { Route as TypographyLineHeightCalculatorRouteImport } from './routes/typography/line-height-calculator'
 import { Route as TypographyFontPairPreviewerRouteImport } from './routes/typography/font-pair-previewer'
@@ -19,8 +23,10 @@ import { Route as PreviewOpenGraphRouteImport } from './routes/preview/open-grap
 import { Route as PreviewJsonLdBuilderRouteImport } from './routes/preview/json-ld-builder'
 import { Route as GeneratorsUuidRouteImport } from './routes/generators/uuid'
 import { Route as GeneratorsRobotsTxtRouteImport } from './routes/generators/robots-txt'
+import { Route as GeneratorsQrCodeRouteImport } from './routes/generators/qr-code'
 import { Route as GeneratorsMetaTagRouteImport } from './routes/generators/meta-tag'
 import { Route as GeneratorsLoremIpsumRouteImport } from './routes/generators/lorem-ipsum'
+import { Route as GeneratorsHashGeneratorRouteImport } from './routes/generators/hash-generator'
 import { Route as GeneratorsFaviconRouteImport } from './routes/generators/favicon'
 import { Route as EncodingUrlEncodeRouteImport } from './routes/encoding/url-encode'
 import { Route as EncodingJwtDecoderRouteImport } from './routes/encoding/jwt-decoder'
@@ -47,6 +53,27 @@ import { Route as ColorsColorBlindnessRouteImport } from './routes/colors/color-
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UtilitiesRegexTesterRoute = UtilitiesRegexTesterRouteImport.update({
+  id: '/utilities/regex-tester',
+  path: '/utilities/regex-tester',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UtilitiesMarkdownPreviewRoute =
+  UtilitiesMarkdownPreviewRouteImport.update({
+    id: '/utilities/markdown-preview',
+    path: '/utilities/markdown-preview',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const UtilitiesKeycodeInfoRoute = UtilitiesKeycodeInfoRouteImport.update({
+  id: '/utilities/keycode-info',
+  path: '/utilities/keycode-info',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UtilitiesCronParserRoute = UtilitiesCronParserRouteImport.update({
+  id: '/utilities/cron-parser',
+  path: '/utilities/cron-parser',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TypographyTextStrokeShadowRoute =
@@ -99,6 +126,11 @@ const GeneratorsRobotsTxtRoute = GeneratorsRobotsTxtRouteImport.update({
   path: '/generators/robots-txt',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GeneratorsQrCodeRoute = GeneratorsQrCodeRouteImport.update({
+  id: '/generators/qr-code',
+  path: '/generators/qr-code',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GeneratorsMetaTagRoute = GeneratorsMetaTagRouteImport.update({
   id: '/generators/meta-tag',
   path: '/generators/meta-tag',
@@ -107,6 +139,11 @@ const GeneratorsMetaTagRoute = GeneratorsMetaTagRouteImport.update({
 const GeneratorsLoremIpsumRoute = GeneratorsLoremIpsumRouteImport.update({
   id: '/generators/lorem-ipsum',
   path: '/generators/lorem-ipsum',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GeneratorsHashGeneratorRoute = GeneratorsHashGeneratorRouteImport.update({
+  id: '/generators/hash-generator',
+  path: '/generators/hash-generator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GeneratorsFaviconRoute = GeneratorsFaviconRouteImport.update({
@@ -247,8 +284,10 @@ export interface FileRoutesByFullPath {
   '/encoding/jwt-decoder': typeof EncodingJwtDecoderRoute
   '/encoding/url-encode': typeof EncodingUrlEncodeRoute
   '/generators/favicon': typeof GeneratorsFaviconRoute
+  '/generators/hash-generator': typeof GeneratorsHashGeneratorRoute
   '/generators/lorem-ipsum': typeof GeneratorsLoremIpsumRoute
   '/generators/meta-tag': typeof GeneratorsMetaTagRoute
+  '/generators/qr-code': typeof GeneratorsQrCodeRoute
   '/generators/robots-txt': typeof GeneratorsRobotsTxtRoute
   '/generators/uuid': typeof GeneratorsUuidRoute
   '/preview/json-ld-builder': typeof PreviewJsonLdBuilderRoute
@@ -258,6 +297,10 @@ export interface FileRoutesByFullPath {
   '/typography/font-pair-previewer': typeof TypographyFontPairPreviewerRoute
   '/typography/line-height-calculator': typeof TypographyLineHeightCalculatorRoute
   '/typography/text-stroke-shadow': typeof TypographyTextStrokeShadowRoute
+  '/utilities/cron-parser': typeof UtilitiesCronParserRoute
+  '/utilities/keycode-info': typeof UtilitiesKeycodeInfoRoute
+  '/utilities/markdown-preview': typeof UtilitiesMarkdownPreviewRoute
+  '/utilities/regex-tester': typeof UtilitiesRegexTesterRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -283,8 +326,10 @@ export interface FileRoutesByTo {
   '/encoding/jwt-decoder': typeof EncodingJwtDecoderRoute
   '/encoding/url-encode': typeof EncodingUrlEncodeRoute
   '/generators/favicon': typeof GeneratorsFaviconRoute
+  '/generators/hash-generator': typeof GeneratorsHashGeneratorRoute
   '/generators/lorem-ipsum': typeof GeneratorsLoremIpsumRoute
   '/generators/meta-tag': typeof GeneratorsMetaTagRoute
+  '/generators/qr-code': typeof GeneratorsQrCodeRoute
   '/generators/robots-txt': typeof GeneratorsRobotsTxtRoute
   '/generators/uuid': typeof GeneratorsUuidRoute
   '/preview/json-ld-builder': typeof PreviewJsonLdBuilderRoute
@@ -294,6 +339,10 @@ export interface FileRoutesByTo {
   '/typography/font-pair-previewer': typeof TypographyFontPairPreviewerRoute
   '/typography/line-height-calculator': typeof TypographyLineHeightCalculatorRoute
   '/typography/text-stroke-shadow': typeof TypographyTextStrokeShadowRoute
+  '/utilities/cron-parser': typeof UtilitiesCronParserRoute
+  '/utilities/keycode-info': typeof UtilitiesKeycodeInfoRoute
+  '/utilities/markdown-preview': typeof UtilitiesMarkdownPreviewRoute
+  '/utilities/regex-tester': typeof UtilitiesRegexTesterRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -320,8 +369,10 @@ export interface FileRoutesById {
   '/encoding/jwt-decoder': typeof EncodingJwtDecoderRoute
   '/encoding/url-encode': typeof EncodingUrlEncodeRoute
   '/generators/favicon': typeof GeneratorsFaviconRoute
+  '/generators/hash-generator': typeof GeneratorsHashGeneratorRoute
   '/generators/lorem-ipsum': typeof GeneratorsLoremIpsumRoute
   '/generators/meta-tag': typeof GeneratorsMetaTagRoute
+  '/generators/qr-code': typeof GeneratorsQrCodeRoute
   '/generators/robots-txt': typeof GeneratorsRobotsTxtRoute
   '/generators/uuid': typeof GeneratorsUuidRoute
   '/preview/json-ld-builder': typeof PreviewJsonLdBuilderRoute
@@ -331,6 +382,10 @@ export interface FileRoutesById {
   '/typography/font-pair-previewer': typeof TypographyFontPairPreviewerRoute
   '/typography/line-height-calculator': typeof TypographyLineHeightCalculatorRoute
   '/typography/text-stroke-shadow': typeof TypographyTextStrokeShadowRoute
+  '/utilities/cron-parser': typeof UtilitiesCronParserRoute
+  '/utilities/keycode-info': typeof UtilitiesKeycodeInfoRoute
+  '/utilities/markdown-preview': typeof UtilitiesMarkdownPreviewRoute
+  '/utilities/regex-tester': typeof UtilitiesRegexTesterRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -358,8 +413,10 @@ export interface FileRouteTypes {
     | '/encoding/jwt-decoder'
     | '/encoding/url-encode'
     | '/generators/favicon'
+    | '/generators/hash-generator'
     | '/generators/lorem-ipsum'
     | '/generators/meta-tag'
+    | '/generators/qr-code'
     | '/generators/robots-txt'
     | '/generators/uuid'
     | '/preview/json-ld-builder'
@@ -369,6 +426,10 @@ export interface FileRouteTypes {
     | '/typography/font-pair-previewer'
     | '/typography/line-height-calculator'
     | '/typography/text-stroke-shadow'
+    | '/utilities/cron-parser'
+    | '/utilities/keycode-info'
+    | '/utilities/markdown-preview'
+    | '/utilities/regex-tester'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -394,8 +455,10 @@ export interface FileRouteTypes {
     | '/encoding/jwt-decoder'
     | '/encoding/url-encode'
     | '/generators/favicon'
+    | '/generators/hash-generator'
     | '/generators/lorem-ipsum'
     | '/generators/meta-tag'
+    | '/generators/qr-code'
     | '/generators/robots-txt'
     | '/generators/uuid'
     | '/preview/json-ld-builder'
@@ -405,6 +468,10 @@ export interface FileRouteTypes {
     | '/typography/font-pair-previewer'
     | '/typography/line-height-calculator'
     | '/typography/text-stroke-shadow'
+    | '/utilities/cron-parser'
+    | '/utilities/keycode-info'
+    | '/utilities/markdown-preview'
+    | '/utilities/regex-tester'
   id:
     | '__root__'
     | '/'
@@ -430,8 +497,10 @@ export interface FileRouteTypes {
     | '/encoding/jwt-decoder'
     | '/encoding/url-encode'
     | '/generators/favicon'
+    | '/generators/hash-generator'
     | '/generators/lorem-ipsum'
     | '/generators/meta-tag'
+    | '/generators/qr-code'
     | '/generators/robots-txt'
     | '/generators/uuid'
     | '/preview/json-ld-builder'
@@ -441,6 +510,10 @@ export interface FileRouteTypes {
     | '/typography/font-pair-previewer'
     | '/typography/line-height-calculator'
     | '/typography/text-stroke-shadow'
+    | '/utilities/cron-parser'
+    | '/utilities/keycode-info'
+    | '/utilities/markdown-preview'
+    | '/utilities/regex-tester'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -467,8 +540,10 @@ export interface RootRouteChildren {
   EncodingJwtDecoderRoute: typeof EncodingJwtDecoderRoute
   EncodingUrlEncodeRoute: typeof EncodingUrlEncodeRoute
   GeneratorsFaviconRoute: typeof GeneratorsFaviconRoute
+  GeneratorsHashGeneratorRoute: typeof GeneratorsHashGeneratorRoute
   GeneratorsLoremIpsumRoute: typeof GeneratorsLoremIpsumRoute
   GeneratorsMetaTagRoute: typeof GeneratorsMetaTagRoute
+  GeneratorsQrCodeRoute: typeof GeneratorsQrCodeRoute
   GeneratorsRobotsTxtRoute: typeof GeneratorsRobotsTxtRoute
   GeneratorsUuidRoute: typeof GeneratorsUuidRoute
   PreviewJsonLdBuilderRoute: typeof PreviewJsonLdBuilderRoute
@@ -478,6 +553,10 @@ export interface RootRouteChildren {
   TypographyFontPairPreviewerRoute: typeof TypographyFontPairPreviewerRoute
   TypographyLineHeightCalculatorRoute: typeof TypographyLineHeightCalculatorRoute
   TypographyTextStrokeShadowRoute: typeof TypographyTextStrokeShadowRoute
+  UtilitiesCronParserRoute: typeof UtilitiesCronParserRoute
+  UtilitiesKeycodeInfoRoute: typeof UtilitiesKeycodeInfoRoute
+  UtilitiesMarkdownPreviewRoute: typeof UtilitiesMarkdownPreviewRoute
+  UtilitiesRegexTesterRoute: typeof UtilitiesRegexTesterRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -487,6 +566,34 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/utilities/regex-tester': {
+      id: '/utilities/regex-tester'
+      path: '/utilities/regex-tester'
+      fullPath: '/utilities/regex-tester'
+      preLoaderRoute: typeof UtilitiesRegexTesterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/utilities/markdown-preview': {
+      id: '/utilities/markdown-preview'
+      path: '/utilities/markdown-preview'
+      fullPath: '/utilities/markdown-preview'
+      preLoaderRoute: typeof UtilitiesMarkdownPreviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/utilities/keycode-info': {
+      id: '/utilities/keycode-info'
+      path: '/utilities/keycode-info'
+      fullPath: '/utilities/keycode-info'
+      preLoaderRoute: typeof UtilitiesKeycodeInfoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/utilities/cron-parser': {
+      id: '/utilities/cron-parser'
+      path: '/utilities/cron-parser'
+      fullPath: '/utilities/cron-parser'
+      preLoaderRoute: typeof UtilitiesCronParserRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/typography/text-stroke-shadow': {
@@ -552,6 +659,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GeneratorsRobotsTxtRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/generators/qr-code': {
+      id: '/generators/qr-code'
+      path: '/generators/qr-code'
+      fullPath: '/generators/qr-code'
+      preLoaderRoute: typeof GeneratorsQrCodeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/generators/meta-tag': {
       id: '/generators/meta-tag'
       path: '/generators/meta-tag'
@@ -564,6 +678,13 @@ declare module '@tanstack/react-router' {
       path: '/generators/lorem-ipsum'
       fullPath: '/generators/lorem-ipsum'
       preLoaderRoute: typeof GeneratorsLoremIpsumRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/generators/hash-generator': {
+      id: '/generators/hash-generator'
+      path: '/generators/hash-generator'
+      fullPath: '/generators/hash-generator'
+      preLoaderRoute: typeof GeneratorsHashGeneratorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/generators/favicon': {
@@ -747,8 +868,10 @@ const rootRouteChildren: RootRouteChildren = {
   EncodingJwtDecoderRoute: EncodingJwtDecoderRoute,
   EncodingUrlEncodeRoute: EncodingUrlEncodeRoute,
   GeneratorsFaviconRoute: GeneratorsFaviconRoute,
+  GeneratorsHashGeneratorRoute: GeneratorsHashGeneratorRoute,
   GeneratorsLoremIpsumRoute: GeneratorsLoremIpsumRoute,
   GeneratorsMetaTagRoute: GeneratorsMetaTagRoute,
+  GeneratorsQrCodeRoute: GeneratorsQrCodeRoute,
   GeneratorsRobotsTxtRoute: GeneratorsRobotsTxtRoute,
   GeneratorsUuidRoute: GeneratorsUuidRoute,
   PreviewJsonLdBuilderRoute: PreviewJsonLdBuilderRoute,
@@ -758,6 +881,10 @@ const rootRouteChildren: RootRouteChildren = {
   TypographyFontPairPreviewerRoute: TypographyFontPairPreviewerRoute,
   TypographyLineHeightCalculatorRoute: TypographyLineHeightCalculatorRoute,
   TypographyTextStrokeShadowRoute: TypographyTextStrokeShadowRoute,
+  UtilitiesCronParserRoute: UtilitiesCronParserRoute,
+  UtilitiesKeycodeInfoRoute: UtilitiesKeycodeInfoRoute,
+  UtilitiesMarkdownPreviewRoute: UtilitiesMarkdownPreviewRoute,
+  UtilitiesRegexTesterRoute: UtilitiesRegexTesterRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

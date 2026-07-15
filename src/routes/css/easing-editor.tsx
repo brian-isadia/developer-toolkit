@@ -1,20 +1,26 @@
-import { useState, useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ToolPageLayout } from "#/components/tool-page-layout";
-import { Label } from "#/components/ui/label";
-import { Slider } from "#/components/ui/slider";
-import { CodeOutput } from "#/components/code-output";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "#/components/ui/select";
-import { Button } from "#/components/ui/button";
 import { Play } from "lucide-react";
+import { useEffect, useState } from "react";
+import { CodeOutput } from "#/components/code-output";
+import { ToolPageLayout } from "#/components/tool-page-layout";
+import { Button } from "#/components/ui/button";
+import { Label } from "#/components/ui/label";
+import {
+	Select,
+	SelectContent,
+	SelectItem,
+	SelectTrigger,
+	SelectValue,
+} from "#/components/ui/select";
+import { Slider } from "#/components/ui/slider";
 
 export const Route = createFileRoute("/css/easing-editor")({
 	component: EasingEditor,
 });
 
 const PRESETS: Record<string, [number, number, number, number]> = {
-	"linear": [0, 0, 1, 1],
-	"ease": [0.25, 0.1, 0.25, 1],
+	linear: [0, 0, 1, 1],
+	ease: [0.25, 0.1, 0.25, 1],
 	"ease-in": [0.42, 0, 1, 1],
 	"ease-out": [0, 0, 0.58, 1],
 	"ease-in-out": [0.42, 0, 0.58, 1],
@@ -64,7 +70,9 @@ function EasingEditor() {
 							</SelectTrigger>
 							<SelectContent>
 								{Object.keys(PRESETS).map((p) => (
-									<SelectItem key={p} value={p}>{p}</SelectItem>
+									<SelectItem key={p} value={p}>
+										{p}
+									</SelectItem>
 								))}
 							</SelectContent>
 						</Select>
@@ -74,39 +82,79 @@ function EasingEditor() {
 						<div className="space-y-3">
 							<div className="flex justify-between">
 								<Label>P1 X</Label>
-								<span className="text-sm text-muted-foreground">{p1x.toFixed(2)}</span>
+								<span className="text-sm text-muted-foreground">
+									{p1x.toFixed(2)}
+								</span>
 							</div>
-							<Slider min={0} max={1} step={0.01} value={[p1x]} onValueChange={([v]) => setP1x(v)} />
+							<Slider
+								min={0}
+								max={1}
+								step={0.01}
+								value={[p1x]}
+								onValueChange={([v]) => setP1x(v)}
+							/>
 						</div>
 						<div className="space-y-3">
 							<div className="flex justify-between">
 								<Label>P1 Y</Label>
-								<span className="text-sm text-muted-foreground">{p1y.toFixed(2)}</span>
+								<span className="text-sm text-muted-foreground">
+									{p1y.toFixed(2)}
+								</span>
 							</div>
-							<Slider min={-1} max={2} step={0.01} value={[p1y]} onValueChange={([v]) => setP1y(v)} />
+							<Slider
+								min={-1}
+								max={2}
+								step={0.01}
+								value={[p1y]}
+								onValueChange={([v]) => setP1y(v)}
+							/>
 						</div>
 						<div className="space-y-3">
 							<div className="flex justify-between">
 								<Label>P2 X</Label>
-								<span className="text-sm text-muted-foreground">{p2x.toFixed(2)}</span>
+								<span className="text-sm text-muted-foreground">
+									{p2x.toFixed(2)}
+								</span>
 							</div>
-							<Slider min={0} max={1} step={0.01} value={[p2x]} onValueChange={([v]) => setP2x(v)} />
+							<Slider
+								min={0}
+								max={1}
+								step={0.01}
+								value={[p2x]}
+								onValueChange={([v]) => setP2x(v)}
+							/>
 						</div>
 						<div className="space-y-3">
 							<div className="flex justify-between">
 								<Label>P2 Y</Label>
-								<span className="text-sm text-muted-foreground">{p2y.toFixed(2)}</span>
+								<span className="text-sm text-muted-foreground">
+									{p2y.toFixed(2)}
+								</span>
 							</div>
-							<Slider min={-1} max={2} step={0.01} value={[p2y]} onValueChange={([v]) => setP2y(v)} />
+							<Slider
+								min={-1}
+								max={2}
+								step={0.01}
+								value={[p2y]}
+								onValueChange={([v]) => setP2y(v)}
+							/>
 						</div>
 					</div>
 
 					<div className="space-y-3 pt-4 border-t border-border">
 						<div className="flex justify-between">
 							<Label>Duration</Label>
-							<span className="text-sm text-muted-foreground">{duration}ms</span>
+							<span className="text-sm text-muted-foreground">
+								{duration}ms
+							</span>
 						</div>
-						<Slider min={100} max={3000} step={100} value={[duration]} onValueChange={([v]) => setDuration(v)} />
+						<Slider
+							min={100}
+							max={3000}
+							step={100}
+							value={[duration]}
+							onValueChange={([v]) => setDuration(v)}
+						/>
 					</div>
 				</div>
 
@@ -115,28 +163,66 @@ function EasingEditor() {
 						{/* Visualizer */}
 						<div className="flex items-center justify-center p-8 bg-background border border-border rounded-xl">
 							<div className="relative border-b-2 border-l-2 border-border w-[200px] h-[200px]">
-								<svg width="200" height="200" className="overflow-visible absolute inset-0">
-									<line x1="0" y1="200" x2={p1x_svg} y2={p1y_svg} stroke="oklch(0.5 0 0)" strokeWidth="2" strokeDasharray="4 4" />
-									<line x1="200" y1="0" x2={p2x_svg} y2={p2y_svg} stroke="oklch(0.5 0 0)" strokeWidth="2" strokeDasharray="4 4" />
-									<circle cx={p1x_svg} cy={p1y_svg} r="5" fill="var(--primary)" />
-									<circle cx={p2x_svg} cy={p2y_svg} r="5" fill="var(--primary)" />
-									<path d={pathData} fill="none" stroke="var(--primary)" strokeWidth="4" />
+								<svg
+									width="200"
+									height="200"
+									className="overflow-visible absolute inset-0"
+								>
+									<line
+										x1="0"
+										y1="200"
+										x2={p1x_svg}
+										y2={p1y_svg}
+										stroke="oklch(0.5 0 0)"
+										strokeWidth="2"
+										strokeDasharray="4 4"
+									/>
+									<line
+										x1="200"
+										y1="0"
+										x2={p2x_svg}
+										y2={p2y_svg}
+										stroke="oklch(0.5 0 0)"
+										strokeWidth="2"
+										strokeDasharray="4 4"
+									/>
+									<circle
+										cx={p1x_svg}
+										cy={p1y_svg}
+										r="5"
+										fill="var(--primary)"
+									/>
+									<circle
+										cx={p2x_svg}
+										cy={p2y_svg}
+										r="5"
+										fill="var(--primary)"
+									/>
+									<path
+										d={pathData}
+										fill="none"
+										stroke="var(--primary)"
+										strokeWidth="4"
+									/>
 								</svg>
 							</div>
 						</div>
 
 						{/* Animation Preview */}
 						<div className="flex flex-col p-6 bg-card border border-border rounded-xl justify-between gap-8 overflow-hidden">
-							<Button onClick={() => setTrigger(t => t + 1)} className="w-full">
+							<Button
+								onClick={() => setTrigger((t) => t + 1)}
+								className="w-full"
+							>
 								<Play className="mr-2 size-4" /> Play Animation
 							</Button>
-							
+
 							<div className="flex-1 flex flex-col justify-center space-y-8 relative">
 								<div className="w-full h-px bg-border absolute top-1/4" />
 								<div className="w-full h-px bg-border absolute top-3/4" />
-								
+
 								{/* Subject */}
-								<div 
+								<div
 									key={trigger}
 									className="size-12 rounded-lg bg-primary shadow-lg"
 									style={{
@@ -150,7 +236,7 @@ function EasingEditor() {
 					<CodeOutput code={css} language="css" label="CSS" />
 				</div>
 			</div>
-			
+
 			<style>{`
 				@keyframes slide {
 					0% { transform: translateX(0); }

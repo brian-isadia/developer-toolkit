@@ -1,11 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { findGroupByToolPath, findToolByPath } from "#/lib/tool-registry";
 
-export function ToolPageLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export function ToolPageLayout({ children }: { children: React.ReactNode }) {
 	const pathname = useRouterState({ select: (s) => s.location.pathname });
 	const tool = findToolByPath(pathname);
 	const group = findGroupByToolPath(pathname);

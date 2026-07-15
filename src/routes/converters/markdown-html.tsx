@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import DOMPurify from "dompurify";
+import { marked } from "marked";
+import { useEffect, useState } from "react";
 import { ToolPageLayout } from "#/components/tool-page-layout";
 import { Textarea } from "#/components/ui/textarea";
-import { marked } from "marked";
-import DOMPurify from "dompurify";
 
 export const Route = createFileRoute("/converters/markdown-html")({
 	component: MarkdownHtmlConverter,
@@ -27,7 +27,7 @@ function MarkdownHtmlConverter() {
 	useEffect(() => {
 		const parse = async () => {
 			const rawHtml = await marked.parse(markdown);
-			// DOMPurify doesn't work out of the box in SSR without a window object, 
+			// DOMPurify doesn't work out of the box in SSR without a window object,
 			// but we are in the browser here. Wait, TanStack Start SSR might run this!
 			// We should only purify on the client or handle SSR safely.
 			if (typeof window !== "undefined") {
@@ -58,7 +58,7 @@ function MarkdownHtmlConverter() {
 					<div className="bg-muted px-4 py-2 border-b border-border font-semibold text-sm">
 						HTML Preview
 					</div>
-					<div 
+					<div
 						className="flex-1 overflow-auto p-6 prose prose-invert max-w-none bg-background"
 						dangerouslySetInnerHTML={{ __html: html }}
 					/>

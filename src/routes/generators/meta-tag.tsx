@@ -6,9 +6,12 @@ export const Route = createFileRoute("/generators/meta-tag")({
 	head: () => ({
 		meta: [
 			{ title: "Meta Tag Generator | WebToolkit" },
-			{ name: "description", content: "Generate SEO, Open Graph, and Twitter meta tags" }
-		]
-	})
+			{
+				name: "description",
+				content: "Generate SEO, Open Graph, and Twitter meta tags",
+			},
+		],
+	}),
 });
 
 function RouteComponent() {

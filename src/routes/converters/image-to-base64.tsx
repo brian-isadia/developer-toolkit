@@ -1,10 +1,10 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ToolPageLayout } from "#/components/tool-page-layout";
-import { Label } from "#/components/ui/label";
-import { Input } from "#/components/ui/input";
+import { FileImage, UploadCloud } from "lucide-react";
+import { useState } from "react";
 import { CodeOutput } from "#/components/code-output";
-import { UploadCloud, FileImage } from "lucide-react";
+import { ToolPageLayout } from "#/components/tool-page-layout";
+import { Input } from "#/components/ui/input";
+import { Label } from "#/components/ui/label";
 
 export const Route = createFileRoute("/converters/image-to-base64")({
 	component: ImageToBase64,
@@ -36,7 +36,7 @@ function ImageToBase64() {
 		const k = 1024;
 		const sizes = ["Bytes", "KB", "MB"];
 		const i = Math.floor(Math.log(bytes) / Math.log(k));
-		return Number.parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + " " + sizes[i];
+		return Number.parseFloat((bytes / k ** i).toFixed(2)) + " " + sizes[i];
 	};
 
 	return (
@@ -51,8 +51,12 @@ function ImageToBase64() {
 							className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
 						/>
 						<UploadCloud className="size-12 text-muted-foreground mb-4 group-hover:text-primary transition-colors" />
-						<h3 className="text-lg font-semibold">Drop an image here or click to upload</h3>
-						<p className="text-sm text-muted-foreground mt-2">Supports JPG, PNG, WEBP, SVG, GIF</p>
+						<h3 className="text-lg font-semibold">
+							Drop an image here or click to upload
+						</h3>
+						<p className="text-sm text-muted-foreground mt-2">
+							Supports JPG, PNG, WEBP, SVG, GIF
+						</p>
 					</div>
 
 					{base64 && (
@@ -63,7 +67,8 @@ function ImageToBase64() {
 									<span className="font-medium">{fileName}</span>
 								</div>
 								<div className="text-sm text-muted-foreground">
-									Original: {formatSize(fileSize)} &bull; Base64: {formatSize(base64.length)}
+									Original: {formatSize(fileSize)} &bull; Base64:{" "}
+									{formatSize(base64.length)}
 								</div>
 							</div>
 							<CodeOutput code={base64} label="Base64 Data URI" />
@@ -73,9 +78,9 @@ function ImageToBase64() {
 
 				<div className="bg-card border border-border rounded-xl p-6 h-fit min-h-[300px] flex flex-col items-center justify-center relative overflow-hidden">
 					{base64 ? (
-						<img 
-							src={base64} 
-							alt="Preview" 
+						<img
+							src={base64}
+							alt="Preview"
 							className="max-w-full max-h-[400px] object-contain rounded-md"
 						/>
 					) : (

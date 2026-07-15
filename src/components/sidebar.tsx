@@ -1,13 +1,20 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { ChevronLeft, ChevronRight, Menu, SquareTerminal } from "lucide-react";
 import { Button } from "#/components/ui/button";
-import { Tooltip, TooltipContent, TooltipTrigger } from "#/components/ui/tooltip";
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipTrigger,
+} from "#/components/ui/tooltip";
 import { usePersistedState } from "#/hooks/use-persisted-state";
 import { toolGroups } from "#/lib/tool-registry";
 import { cn } from "#/lib/utils";
 
 export function Sidebar() {
-	const [isCollapsed, setIsCollapsed] = usePersistedState("sidebar-collapsed", false);
+	const [isCollapsed, setIsCollapsed] = usePersistedState(
+		"sidebar-collapsed",
+		false,
+	);
 	const pathname = useRouterState({ select: (s) => s.location.pathname });
 
 	return (
@@ -19,7 +26,10 @@ export function Sidebar() {
 		>
 			<div className="flex h-14 items-center border-b border-border px-4 justify-between">
 				{!isCollapsed && (
-					<Link to="/" className="flex items-center gap-2 font-semibold text-lg tracking-tight hover:text-primary transition-colors">
+					<Link
+						to="/"
+						className="flex items-center gap-2 font-semibold text-lg tracking-tight hover:text-primary transition-colors"
+					>
 						<SquareTerminal className="size-5 text-primary" />
 						<span>WebToolkit</span>
 					</Link>
@@ -62,7 +72,9 @@ export function Sidebar() {
 											<tool.icon
 												className={cn(
 													"size-4 shrink-0 transition-colors",
-													isActive ? "text-primary" : "text-muted-foreground group-hover:text-accent-foreground",
+													isActive
+														? "text-primary"
+														: "text-muted-foreground group-hover:text-accent-foreground",
 												)}
 											/>
 											{!isCollapsed && <span>{tool.name}</span>}
@@ -73,7 +85,10 @@ export function Sidebar() {
 										return (
 											<Tooltip key={tool.slug} delayDuration={0}>
 												<TooltipTrigger asChild>{link}</TooltipTrigger>
-												<TooltipContent side="right" className="flex items-center gap-4">
+												<TooltipContent
+													side="right"
+													className="flex items-center gap-4"
+												>
 													{tool.name}
 												</TooltipContent>
 											</Tooltip>
@@ -94,7 +109,11 @@ export function Sidebar() {
 					className="w-full flex items-center justify-center text-muted-foreground hover:text-foreground"
 					onClick={() => setIsCollapsed((prev) => !prev)}
 				>
-					{isCollapsed ? <ChevronRight className="size-4" /> : <ChevronLeft className="size-4" />}
+					{isCollapsed ? (
+						<ChevronRight className="size-4" />
+					) : (
+						<ChevronLeft className="size-4" />
+					)}
 				</Button>
 			</div>
 		</aside>

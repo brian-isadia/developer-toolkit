@@ -10,10 +10,7 @@ export function useCopyToClipboard(resetDelay = 2000) {
 				await navigator.clipboard.writeText(text);
 				setCopied(true);
 				if (timeoutRef.current) clearTimeout(timeoutRef.current);
-				timeoutRef.current = setTimeout(
-					() => setCopied(false),
-					resetDelay,
-				);
+				timeoutRef.current = setTimeout(() => setCopied(false), resetDelay);
 				return true;
 			} catch {
 				return false;

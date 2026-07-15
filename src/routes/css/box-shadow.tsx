@@ -1,11 +1,11 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { CodeOutput } from "#/components/code-output";
 import { ToolPageLayout } from "#/components/tool-page-layout";
+import { Input } from "#/components/ui/input";
 import { Label } from "#/components/ui/label";
 import { Slider } from "#/components/ui/slider";
 import { Switch } from "#/components/ui/switch";
-import { Input } from "#/components/ui/input";
-import { CodeOutput } from "#/components/code-output";
 
 export const Route = createFileRoute("/css/box-shadow")({
 	component: BoxShadowGenerator,
@@ -31,15 +31,25 @@ function BoxShadowGenerator() {
 							<Label>Horizontal Offset</Label>
 							<span className="text-sm text-muted-foreground">{x}px</span>
 						</div>
-						<Slider min={-100} max={100} value={[x]} onValueChange={([v]) => setX(v)} />
+						<Slider
+							min={-100}
+							max={100}
+							value={[x]}
+							onValueChange={([v]) => setX(v)}
+						/>
 					</div>
-					
+
 					<div className="space-y-3">
 						<div className="flex justify-between">
 							<Label>Vertical Offset</Label>
 							<span className="text-sm text-muted-foreground">{y}px</span>
 						</div>
-						<Slider min={-100} max={100} value={[y]} onValueChange={([v]) => setY(v)} />
+						<Slider
+							min={-100}
+							max={100}
+							value={[y]}
+							onValueChange={([v]) => setY(v)}
+						/>
 					</div>
 
 					<div className="space-y-3">
@@ -47,7 +57,12 @@ function BoxShadowGenerator() {
 							<Label>Blur Radius</Label>
 							<span className="text-sm text-muted-foreground">{blur}px</span>
 						</div>
-						<Slider min={0} max={100} value={[blur]} onValueChange={([v]) => setBlur(v)} />
+						<Slider
+							min={0}
+							max={100}
+							value={[blur]}
+							onValueChange={([v]) => setBlur(v)}
+						/>
 					</div>
 
 					<div className="space-y-3">
@@ -55,7 +70,12 @@ function BoxShadowGenerator() {
 							<Label>Spread Radius</Label>
 							<span className="text-sm text-muted-foreground">{spread}px</span>
 						</div>
-						<Slider min={-50} max={50} value={[spread]} onValueChange={([v]) => setSpread(v)} />
+						<Slider
+							min={-50}
+							max={50}
+							value={[spread]}
+							onValueChange={([v]) => setSpread(v)}
+						/>
 					</div>
 
 					<div className="space-y-3">
@@ -71,7 +91,7 @@ function BoxShadowGenerator() {
 
 				<div className="space-y-6">
 					<div className="w-full h-[400px] bg-background border border-border rounded-xl flex items-center justify-center relative overflow-hidden pattern-dots">
-						<div 
+						<div
 							className="w-48 h-48 bg-card border border-border rounded-lg"
 							style={{ boxShadow }}
 						/>

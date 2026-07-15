@@ -6,9 +6,12 @@ export const Route = createFileRoute("/generators/robots-txt")({
 	head: () => ({
 		meta: [
 			{ title: "robots.txt Builder | WebToolkit" },
-			{ name: "description", content: "Build robots.txt with visual controls and presets" }
-		]
-	})
+			{
+				name: "description",
+				content: "Build robots.txt with visual controls and presets",
+			},
+		],
+	}),
 });
 
 function RouteComponent() {

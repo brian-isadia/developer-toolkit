@@ -6,9 +6,12 @@ export const Route = createFileRoute("/preview/open-graph")({
 	head: () => ({
 		meta: [
 			{ title: "Open Graph Preview | WebToolkit" },
-			{ name: "description", content: "Preview how your page appears on social platforms" }
-		]
-	})
+			{
+				name: "description",
+				content: "Preview how your page appears on social platforms",
+			},
+		],
+	}),
 });
 
 function RouteComponent() {

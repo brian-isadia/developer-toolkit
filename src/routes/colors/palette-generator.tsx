@@ -1,11 +1,11 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { ToolPageLayout } from "#/components/tool-page-layout";
-import { parseColor, hslToRgb, rgbToHex } from "#/lib/color";
 import { Input } from "#/components/ui/input";
 import { Label } from "#/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "#/components/ui/tabs";
 import { useCopyToClipboard } from "#/hooks/use-copy-to-clipboard";
+import { hslToRgb, parseColor, rgbToHex } from "#/lib/color";
 
 export const Route = createFileRoute("/colors/palette-generator")({
 	component: PaletteGenerator,
@@ -52,34 +52,23 @@ function PaletteGenerator() {
 
 	if (parsed) {
 		const { h, s, l } = parsed.hsl;
-		
+
 		const toHex = (hue: number, sat: number, lit: number) => {
 			const normH = (hue + 360) % 360;
 			return rgbToHex(hslToRgb({ h: normH, s: sat, l: lit }));
 		};
 
 		palettes = {
-			complementary: [
-				parsed.hex,
-				toHex(h + 180, s, l)
-			],
-			analogous: [
-				toHex(h - 30, s, l),
-				parsed.hex,
-				toHex(h + 30, s, l)
-			],
-			triadic: [
-				parsed.hex,
-				toHex(h + 120, s, l),
-				toHex(h + 240, s, l)
-			],
+			complementary: [parsed.hex, toHex(h + 180, s, l)],
+			analogous: [toHex(h - 30, s, l), parsed.hex, toHex(h + 30, s, l)],
+			triadic: [parsed.hex, toHex(h + 120, s, l), toHex(h + 240, s, l)],
 			monochromatic: [
 				toHex(h, s, Math.max(l - 40, 10)),
 				toHex(h, s, Math.max(l - 20, 20)),
 				parsed.hex,
 				toHex(h, s, Math.min(l + 20, 80)),
-				toHex(h, s, Math.min(l + 40, 95))
-			]
+				toHex(h, s, Math.min(l + 40, 95)),
+			],
 		};
 	}
 
@@ -104,7 +93,9 @@ function PaletteGenerator() {
 							placeholder="#3b82f6"
 						/>
 					</div>
-					{!parsed && input && <p className="text-sm text-destructive">Invalid color</p>}
+					{!parsed && input && (
+						<p className="text-sm text-destructive">Invalid color</p>
+					)}
 				</div>
 
 				{parsed && (
@@ -119,25 +110,29 @@ function PaletteGenerator() {
 							<TabsContent value="monochromatic">
 								<PaletteDisplay colors={palettes.monochromatic} />
 								<p className="text-sm text-muted-foreground mt-4">
-									Variations in lightness of the same hue. Creates a cohesive and harmonious look.
+									Variations in lightness of the same hue. Creates a cohesive
+									and harmonious look.
 								</p>
 							</TabsContent>
 							<TabsContent value="analogous">
 								<PaletteDisplay colors={palettes.analogous} />
 								<p className="text-sm text-muted-foreground mt-4">
-									Colors next to each other on the color wheel. Often found in nature and pleasing to the eye.
+									Colors next to each other on the color wheel. Often found in
+									nature and pleasing to the eye.
 								</p>
 							</TabsContent>
 							<TabsContent value="complementary">
 								<PaletteDisplay colors={palettes.complementary} />
 								<p className="text-sm text-muted-foreground mt-4">
-									Colors opposite each other on the color wheel. High contrast and high impact.
+									Colors opposite each other on the color wheel. High contrast
+									and high impact.
 								</p>
 							</TabsContent>
 							<TabsContent value="triadic">
 								<PaletteDisplay colors={palettes.triadic} />
 								<p className="text-sm text-muted-foreground mt-4">
-									Three colors evenly spaced around the color wheel. Vibrant even when using pale versions of hues.
+									Three colors evenly spaced around the color wheel. Vibrant
+									even when using pale versions of hues.
 								</p>
 							</TabsContent>
 						</div>

@@ -6,9 +6,12 @@ export const Route = createFileRoute("/preview/json-ld-builder")({
 	head: () => ({
 		meta: [
 			{ title: "JSON-LD Builder | WebToolkit" },
-			{ name: "description", content: "Build and validate structured data for schema.org" }
-		]
-	})
+			{
+				name: "description",
+				content: "Build and validate structured data for schema.org",
+			},
+		],
+	}),
 });
 
 function RouteComponent() {

@@ -1,6 +1,6 @@
 import { Outlet } from "@tanstack/react-router";
-import { Sidebar } from "#/components/sidebar";
 import { CommandPalette } from "#/components/command-palette";
+import { Sidebar } from "#/components/sidebar";
 import { TooltipProvider } from "#/components/ui/tooltip";
 
 export function AppLayout({ children }: { children: React.ReactNode }) {

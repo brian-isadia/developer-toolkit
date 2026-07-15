@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ToolPageLayout } from "#/components/tool-page-layout";
-import { Textarea } from "#/components/ui/textarea";
 import { ArrowLeftRight } from "lucide-react";
+import { useState } from "react";
+import { ToolPageLayout } from "#/components/tool-page-layout";
 import { Button } from "#/components/ui/button";
+import { Textarea } from "#/components/ui/textarea";
 
 export const Route = createFileRoute("/encoding/html-entity-encoder")({
 	component: HtmlEntityTool,
@@ -23,7 +23,9 @@ function HtmlEntityTool() {
 
 		if (currentMode === "encode") {
 			// Encode special chars
-			setOutput(val.replace(/[\u00A0-\u9999<>\&"']/g, (i) => `&#${i.charCodeAt(0)};`));
+			setOutput(
+				val.replace(/[\u00A0-\u9999<>&"']/g, (i) => `&#${i.charCodeAt(0)};`),
+			);
 		} else {
 			// Decode entities. We can use DOMParser for decoding.
 			const txt = document.createElement("textarea");
@@ -43,15 +45,21 @@ function HtmlEntityTool() {
 			<div className="space-y-6">
 				<div className="flex items-center justify-between bg-card border border-border rounded-lg p-2">
 					<div className="flex gap-2">
-						<Button 
-							variant={mode === "encode" ? "default" : "ghost"} 
-							onClick={() => { setMode("encode"); process(input, "encode"); }}
+						<Button
+							variant={mode === "encode" ? "default" : "ghost"}
+							onClick={() => {
+								setMode("encode");
+								process(input, "encode");
+							}}
 						>
 							Encode
 						</Button>
-						<Button 
-							variant={mode === "decode" ? "default" : "ghost"} 
-							onClick={() => { setMode("decode"); process(input, "decode"); }}
+						<Button
+							variant={mode === "decode" ? "default" : "ghost"}
+							onClick={() => {
+								setMode("decode");
+								process(input, "decode");
+							}}
 						>
 							Decode
 						</Button>
@@ -70,7 +78,11 @@ function HtmlEntityTool() {
 							value={input}
 							onChange={(e) => process(e.target.value, mode)}
 							className="flex-1 resize-none border-0 rounded-none focus-visible:ring-0 p-4 font-mono text-sm bg-transparent"
-							placeholder={mode === "encode" ? "Type HTML like <div>..." : "Paste encoded string like &#60;div&#62;..."}
+							placeholder={
+								mode === "encode"
+									? "Type HTML like <div>..."
+									: "Paste encoded string like &#60;div&#62;..."
+							}
 						/>
 					</div>
 

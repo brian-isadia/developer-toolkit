@@ -90,14 +90,10 @@ describe("formatters", () => {
 		expect(formatRgb({ r: 255, g: 85, b: 0 })).toBe("rgb(255, 85, 0)");
 	});
 	it("formatHsl formats correctly", () => {
-		expect(formatHsl({ h: 20, s: 100, l: 50 })).toBe(
-			"hsl(20, 100%, 50%)",
-		);
+		expect(formatHsl({ h: 20, s: 100, l: 50 })).toBe("hsl(20, 100%, 50%)");
 	});
 	it("formatOklch formats correctly", () => {
-		expect(formatOklch({ l: 0.7, c: 0.15, h: 30 })).toBe(
-			"oklch(0.7 0.15 30)",
-		);
+		expect(formatOklch({ l: 0.7, c: 0.15, h: 30 })).toBe("oklch(0.7 0.15 30)");
 	});
 });
 

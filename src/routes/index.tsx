@@ -1,7 +1,13 @@
-import { Link, createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Search } from "lucide-react";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+} from "#/components/ui/card";
 import { toolGroups } from "#/lib/tool-registry";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "#/components/ui/card";
 
 export const Route = createFileRoute("/")({
 	component: Home,
@@ -16,8 +22,8 @@ function Home() {
 					The ultimate developer toolkit
 				</h1>
 				<p className="text-xl text-muted-foreground max-w-2xl mb-10">
-					A collection of {toolGroups.flatMap(g => g.tools).length} tools for everyday development tasks.
-					Everything runs locally in your browser.
+					A collection of {toolGroups.flatMap((g) => g.tools).length} tools for
+					everyday development tasks. Everything runs locally in your browser.
 				</p>
 				<div className="w-full max-w-md relative group">
 					<div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
@@ -31,7 +37,7 @@ function Home() {
 							e.preventDefault();
 							// Dispatch keyboard event for cmd+k to open palette
 							document.dispatchEvent(
-								new KeyboardEvent("keydown", { key: "k", metaKey: true })
+								new KeyboardEvent("keydown", { key: "k", metaKey: true }),
 							);
 						}}
 						readOnly
@@ -47,12 +53,18 @@ function Home() {
 							<div className="p-2 bg-primary/10 rounded-lg text-primary">
 								<group.icon className="size-6" />
 							</div>
-							<h2 className="text-2xl font-semibold tracking-tight">{group.label}</h2>
+							<h2 className="text-2xl font-semibold tracking-tight">
+								{group.label}
+							</h2>
 						</div>
 
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 							{group.tools.map((tool) => (
-								<Link key={tool.slug} to={tool.path} className="group/card block h-full">
+								<Link
+									key={tool.slug}
+									to={tool.path}
+									className="group/card block h-full"
+								>
 									<Card className="h-full transition-all hover:border-primary/50 hover:shadow-md bg-card/50 hover:bg-card">
 										<CardHeader className="pb-3">
 											<div className="flex items-center gap-3">

@@ -1,11 +1,17 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ToolPageLayout } from "#/components/tool-page-layout";
+import { useState } from "react";
 import { CodeOutput } from "#/components/code-output";
 import { ColorSwatch } from "#/components/color-swatch";
-import { parseColor, formatHex, formatRgb, formatHsl, formatOklch } from "#/lib/color";
+import { ToolPageLayout } from "#/components/tool-page-layout";
 import { Input } from "#/components/ui/input";
 import { Label } from "#/components/ui/label";
+import {
+	formatHex,
+	formatHsl,
+	formatOklch,
+	formatRgb,
+	parseColor,
+} from "#/lib/color";
 
 export const Route = createFileRoute("/colors/color-converter")({
 	component: ColorConverter,

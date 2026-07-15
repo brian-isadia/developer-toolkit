@@ -1,12 +1,18 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { CodeOutput } from "#/components/code-output";
 import { ToolPageLayout } from "#/components/tool-page-layout";
+import { Card, CardContent } from "#/components/ui/card";
 import { Input } from "#/components/ui/input";
 import { Label } from "#/components/ui/label";
+import {
+	Select,
+	SelectContent,
+	SelectItem,
+	SelectTrigger,
+	SelectValue,
+} from "#/components/ui/select";
 import { Slider } from "#/components/ui/slider";
-import { CodeOutput } from "#/components/code-output";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "#/components/ui/select";
-import { Card, CardContent } from "#/components/ui/card";
 
 export const Route = createFileRoute("/colors/gradient-generator")({
 	component: GradientGenerator,

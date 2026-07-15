@@ -6,9 +6,12 @@ export const Route = createFileRoute("/generators/favicon")({
 	head: () => ({
 		meta: [
 			{ title: "Favicon Generator | WebToolkit" },
-			{ name: "description", content: "Generate multi-size favicons from image or emoji" }
-		]
-	})
+			{
+				name: "description",
+				content: "Generate multi-size favicons from image or emoji",
+			},
+		],
+	}),
 });
 
 function RouteComponent() {

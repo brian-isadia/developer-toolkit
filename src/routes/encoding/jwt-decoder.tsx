@@ -1,8 +1,8 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { CodeOutput } from "#/components/code-output";
 import { ToolPageLayout } from "#/components/tool-page-layout";
 import { Textarea } from "#/components/ui/textarea";
-import { CodeOutput } from "#/components/code-output";
 
 export const Route = createFileRoute("/encoding/jwt-decoder")({
 	component: JwtDecoder,
@@ -10,7 +10,7 @@ export const Route = createFileRoute("/encoding/jwt-decoder")({
 
 function JwtDecoder() {
 	const [input, setInput] = useState("");
-	
+
 	let header = "";
 	let payload = "";
 	let error = "";
@@ -59,10 +59,18 @@ function JwtDecoder() {
 					) : (
 						<>
 							<div className="flex flex-col border border-border rounded-xl overflow-hidden bg-card">
-								<CodeOutput code={header || "Header will appear here"} language="json" label="Header (Algorithm & Type)" />
+								<CodeOutput
+									code={header || "Header will appear here"}
+									language="json"
+									label="Header (Algorithm & Type)"
+								/>
 							</div>
 							<div className="flex flex-col border border-border rounded-xl overflow-hidden bg-card flex-1">
-								<CodeOutput code={payload || "Payload will appear here"} language="json" label="Payload (Data)" />
+								<CodeOutput
+									code={payload || "Payload will appear here"}
+									language="json"
+									label="Payload (Data)"
+								/>
 							</div>
 						</>
 					)}

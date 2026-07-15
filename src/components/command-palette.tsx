@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { Command } from "cmdk";
 import { Search } from "lucide-react";
-import { allTools, findToolByPath, toolGroups } from "#/lib/tool-registry";
-import { useRecentTools } from "#/hooks/use-recent-tools";
+import { useEffect, useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "#/components/ui/dialog";
+import { useRecentTools } from "#/hooks/use-recent-tools";
+import { allTools, findToolByPath, toolGroups } from "#/lib/tool-registry";
 
 export function CommandPalette() {
 	const [open, setOpen] = useState(false);
@@ -85,8 +85,10 @@ export function CommandPalette() {
 							const groupTools = group.tools.filter(
 								(tool) =>
 									tool.name.toLowerCase().includes(search.toLowerCase()) ||
-									tool.description.toLowerCase().includes(search.toLowerCase()) ||
-									tool.keywords.some((kw) => kw.includes(search.toLowerCase()))
+									tool.description
+										.toLowerCase()
+										.includes(search.toLowerCase()) ||
+									tool.keywords.some((kw) => kw.includes(search.toLowerCase())),
 							);
 
 							if (groupTools.length === 0) return null;

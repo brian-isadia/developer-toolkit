@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ToolPageLayout } from "#/components/tool-page-layout";
-import { Textarea } from "#/components/ui/textarea";
 import { ArrowLeftRight } from "lucide-react";
+import { useState } from "react";
+import { ToolPageLayout } from "#/components/tool-page-layout";
 import { Button } from "#/components/ui/button";
+import { Textarea } from "#/components/ui/textarea";
 
 export const Route = createFileRoute("/encoding/base64")({
 	component: Base64Tool,
@@ -33,7 +33,9 @@ function Base64Tool() {
 				setOutput(decodeURIComponent(escape(utf8)));
 			}
 		} catch (e) {
-			setError(currentMode === "decode" ? "Invalid Base64 string" : "Encoding error");
+			setError(
+				currentMode === "decode" ? "Invalid Base64 string" : "Encoding error",
+			);
 			setOutput("");
 		}
 	};
@@ -49,15 +51,21 @@ function Base64Tool() {
 			<div className="space-y-6">
 				<div className="flex items-center justify-between bg-card border border-border rounded-lg p-2">
 					<div className="flex gap-2">
-						<Button 
-							variant={mode === "encode" ? "default" : "ghost"} 
-							onClick={() => { setMode("encode"); process(input, "encode"); }}
+						<Button
+							variant={mode === "encode" ? "default" : "ghost"}
+							onClick={() => {
+								setMode("encode");
+								process(input, "encode");
+							}}
 						>
 							Encode
 						</Button>
-						<Button 
-							variant={mode === "decode" ? "default" : "ghost"} 
-							onClick={() => { setMode("decode"); process(input, "decode"); }}
+						<Button
+							variant={mode === "decode" ? "default" : "ghost"}
+							onClick={() => {
+								setMode("decode");
+								process(input, "decode");
+							}}
 						>
 							Decode
 						</Button>
@@ -76,14 +84,20 @@ function Base64Tool() {
 							value={input}
 							onChange={(e) => process(e.target.value, mode)}
 							className="flex-1 resize-none border-0 rounded-none focus-visible:ring-0 p-4 font-mono text-sm bg-transparent"
-							placeholder={mode === "encode" ? "Type text to encode..." : "Paste Base64 to decode..."}
+							placeholder={
+								mode === "encode"
+									? "Type text to encode..."
+									: "Paste Base64 to decode..."
+							}
 						/>
 					</div>
 
 					<div className="flex flex-col h-full border border-border rounded-xl overflow-hidden bg-card relative">
 						<div className="bg-muted px-4 py-2 border-b border-border font-semibold text-sm flex justify-between">
 							<span>Output {mode === "encode" ? "(Base64)" : "(Text)"}</span>
-							{error && <span className="text-destructive font-normal">{error}</span>}
+							{error && (
+								<span className="text-destructive font-normal">{error}</span>
+							)}
 						</div>
 						<Textarea
 							readOnly

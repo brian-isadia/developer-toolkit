@@ -6,9 +6,12 @@ export const Route = createFileRoute("/preview/responsive-breakpoints")({
 	head: () => ({
 		meta: [
 			{ title: "Responsive Breakpoint Previewer | WebToolkit" },
-			{ name: "description", content: "Preview any URL at common device breakpoints" }
-		]
-	})
+			{
+				name: "description",
+				content: "Preview any URL at common device breakpoints",
+			},
+		],
+	}),
 });
 
 function RouteComponent() {

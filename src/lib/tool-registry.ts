@@ -1,3 +1,4 @@
+import type { LucideIcon } from "lucide-react";
 import {
 	Baseline,
 	Binary,
@@ -32,7 +33,6 @@ import {
 	Text,
 	Type,
 } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
 
 export type Tool = {
 	slug: string;
@@ -59,8 +59,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "color-converter",
 				name: "Color Format Converter",
-				description:
-					"Convert between Hex, RGB, HSL, and OKLCH color formats",
+				description: "Convert between Hex, RGB, HSL, and OKLCH color formats",
 				icon: Pipette,
 				path: "/colors/color-converter",
 				keywords: ["hex", "rgb", "hsl", "oklch", "convert", "color"],
@@ -76,8 +75,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "palette-generator",
 				name: "Palette Generator",
-				description:
-					"Generate harmonious color palettes from a seed color",
+				description: "Generate harmonious color palettes from a seed color",
 				icon: SwatchBook,
 				path: "/colors/palette-generator",
 				keywords: ["palette", "complementary", "analogous", "triadic"],
@@ -85,8 +83,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "color-blindness",
 				name: "Color Blindness Simulator",
-				description:
-					"Preview colors through color vision deficiency filters",
+				description: "Preview colors through color vision deficiency filters",
 				icon: Eye,
 				path: "/colors/color-blindness",
 				keywords: [
@@ -100,8 +97,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "gradient-generator",
 				name: "Gradient Generator",
-				description:
-					"Build linear, radial, and conic CSS gradients visually",
+				description: "Build linear, radial, and conic CSS gradients visually",
 				icon: Paintbrush,
 				path: "/colors/gradient-generator",
 				keywords: ["gradient", "linear", "radial", "conic", "css"],
@@ -109,8 +105,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "tailwind-color-finder",
 				name: "Tailwind Color Finder",
-				description:
-					"Find the nearest Tailwind CSS color class for any color",
+				description: "Find the nearest Tailwind CSS color class for any color",
 				icon: Search,
 				path: "/colors/tailwind-color-finder",
 				keywords: ["tailwind", "class", "nearest", "match"],
@@ -133,8 +128,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "border-radius",
 				name: "Border Radius Visualizer",
-				description:
-					"Individual corner radius control with live preview",
+				description: "Individual corner radius control with live preview",
 				icon: RectangleHorizontal,
 				path: "/css/border-radius",
 				keywords: ["border-radius", "rounded", "corner"],
@@ -142,8 +136,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "easing-editor",
 				name: "Easing Editor",
-				description:
-					"Cubic-bezier curve editor with animation preview",
+				description: "Cubic-bezier curve editor with animation preview",
 				icon: Spline,
 				path: "/css/easing-editor",
 				keywords: ["easing", "cubic-bezier", "animation", "timing"],
@@ -151,8 +144,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "grid-generator",
 				name: "CSS Grid Generator",
-				description:
-					"Visual CSS Grid layout builder with code output",
+				description: "Visual CSS Grid layout builder with code output",
 				icon: Grid3X3,
 				path: "/css/grid-generator",
 				keywords: ["grid", "layout", "columns", "rows", "template"],
@@ -163,13 +155,7 @@ export const toolGroups: ToolGroup[] = [
 				description: "Backdrop-filter glass effect builder",
 				icon: PanelTopOpen,
 				path: "/css/glassmorphism",
-				keywords: [
-					"glass",
-					"blur",
-					"backdrop",
-					"frosted",
-					"transparency",
-				],
+				keywords: ["glass", "blur", "backdrop", "frosted", "transparency"],
 			},
 		],
 	},
@@ -181,24 +167,15 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "fluid-type-scale",
 				name: "Fluid Type Scale Calculator",
-				description:
-					"Generate CSS clamp() values for responsive typography",
+				description: "Generate CSS clamp() values for responsive typography",
 				icon: Ratio,
 				path: "/typography/fluid-type-scale",
-				keywords: [
-					"clamp",
-					"fluid",
-					"responsive",
-					"type",
-					"scale",
-					"viewport",
-				],
+				keywords: ["clamp", "fluid", "responsive", "type", "scale", "viewport"],
 			},
 			{
 				slug: "font-pair-previewer",
 				name: "Font Pair Previewer",
-				description:
-					"Browse and preview curated Google Font pairings",
+				description: "Browse and preview curated Google Font pairings",
 				icon: Text,
 				path: "/typography/font-pair-previewer",
 				keywords: ["font", "pair", "google", "heading", "body"],
@@ -206,22 +183,15 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "line-height-calculator",
 				name: "Line Height Calculator",
-				description:
-					"Calculate optimal line-height for any font size",
+				description: "Calculate optimal line-height for any font size",
 				icon: Ruler,
 				path: "/typography/line-height-calculator",
-				keywords: [
-					"line-height",
-					"leading",
-					"spacing",
-					"readability",
-				],
+				keywords: ["line-height", "leading", "spacing", "readability"],
 			},
 			{
 				slug: "text-stroke-shadow",
 				name: "Text Stroke & Shadow",
-				description:
-					"Visual editor for text-shadow and text-stroke effects",
+				description: "Visual editor for text-shadow and text-stroke effects",
 				icon: Baseline,
 				path: "/typography/text-stroke-shadow",
 				keywords: ["text-shadow", "stroke", "outline", "glow"],
@@ -236,8 +206,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "px-rem",
 				name: "px ↔ rem Converter",
-				description:
-					"Convert between px and rem with configurable base size",
+				description: "Convert between px and rem with configurable base size",
 				icon: Ruler,
 				path: "/converters/px-rem",
 				keywords: ["px", "rem", "convert", "base", "font-size"],
@@ -245,8 +214,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "svg-optimizer",
 				name: "SVG Optimizer",
-				description:
-					"Optimize SVG markup with before/after size comparison",
+				description: "Optimize SVG markup with before/after size comparison",
 				icon: FileCode,
 				path: "/converters/svg-optimizer",
 				keywords: ["svg", "optimize", "minify", "svgo", "clean"],
@@ -254,17 +222,10 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "markdown-html",
 				name: "Markdown ↔ HTML",
-				description:
-					"Convert between Markdown and HTML with live preview",
+				description: "Convert between Markdown and HTML with live preview",
 				icon: FileText,
 				path: "/converters/markdown-html",
-				keywords: [
-					"markdown",
-					"html",
-					"convert",
-					"render",
-					"preview",
-				],
+				keywords: ["markdown", "html", "convert", "render", "preview"],
 			},
 			{
 				slug: "image-to-base64",
@@ -272,30 +233,15 @@ export const toolGroups: ToolGroup[] = [
 				description: "Convert images to Base64 data URIs",
 				icon: FileImage,
 				path: "/converters/image-to-base64",
-				keywords: [
-					"image",
-					"base64",
-					"data-uri",
-					"encode",
-					"upload",
-				],
+				keywords: ["image", "base64", "data-uri", "encode", "upload"],
 			},
 			{
 				slug: "image-format-converter",
 				name: "Image Format Converter",
-				description:
-					"Convert between PNG, WebP, JPEG, and AVIF formats",
+				description: "Convert between PNG, WebP, JPEG, and AVIF formats",
 				icon: FileImage,
 				path: "/converters/image-format-converter",
-				keywords: [
-					"image",
-					"png",
-					"webp",
-					"jpeg",
-					"avif",
-					"convert",
-					"format",
-				],
+				keywords: ["image", "png", "webp", "jpeg", "avif", "convert", "format"],
 			},
 		],
 	},
@@ -341,17 +287,10 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "html-entity-encoder",
 				name: "HTML Entity Encoder",
-				description:
-					"Encode and decode HTML entities and character codes",
+				description: "Encode and decode HTML entities and character codes",
 				icon: Code,
 				path: "/encoding/html-entity-encoder",
-				keywords: [
-					"html",
-					"entity",
-					"encode",
-					"decode",
-					"ampersand",
-				],
+				keywords: ["html", "entity", "encode", "decode", "ampersand"],
 			},
 		],
 	},
@@ -375,19 +314,12 @@ export const toolGroups: ToolGroup[] = [
 					"Generate placeholder text by paragraphs, sentences, or words",
 				icon: Text,
 				path: "/generators/lorem-ipsum",
-				keywords: [
-					"lorem",
-					"ipsum",
-					"placeholder",
-					"dummy",
-					"text",
-				],
+				keywords: ["lorem", "ipsum", "placeholder", "dummy", "text"],
 			},
 			{
 				slug: "meta-tag",
 				name: "Meta Tag Generator",
-				description:
-					"Generate SEO, Open Graph, and Twitter meta tags",
+				description: "Generate SEO, Open Graph, and Twitter meta tags",
 				icon: Globe,
 				path: "/generators/meta-tag",
 				keywords: ["meta", "seo", "og", "twitter", "head"],
@@ -395,8 +327,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "favicon",
 				name: "Favicon Generator",
-				description:
-					"Generate multi-size favicons from image or emoji",
+				description: "Generate multi-size favicons from image or emoji",
 				icon: FileImage,
 				path: "/generators/favicon",
 				keywords: ["favicon", "ico", "icon", "apple-touch"],
@@ -404,8 +335,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "robots-txt",
 				name: "robots.txt Builder",
-				description:
-					"Build robots.txt with visual controls and presets",
+				description: "Build robots.txt with visual controls and presets",
 				icon: Shield,
 				path: "/generators/robots-txt",
 				keywords: ["robots", "txt", "crawler", "bot", "sitemap"],
@@ -420,8 +350,7 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "open-graph",
 				name: "Open Graph Preview",
-				description:
-					"Preview how your page appears on social platforms",
+				description: "Preview how your page appears on social platforms",
 				icon: LayoutGrid,
 				path: "/preview/open-graph",
 				keywords: [
@@ -436,32 +365,18 @@ export const toolGroups: ToolGroup[] = [
 			{
 				slug: "responsive-breakpoints",
 				name: "Responsive Breakpoint Previewer",
-				description:
-					"Preview any URL at common device breakpoints",
+				description: "Preview any URL at common device breakpoints",
 				icon: MonitorSmartphone,
 				path: "/preview/responsive-breakpoints",
-				keywords: [
-					"responsive",
-					"breakpoint",
-					"mobile",
-					"tablet",
-					"desktop",
-				],
+				keywords: ["responsive", "breakpoint", "mobile", "tablet", "desktop"],
 			},
 			{
 				slug: "json-ld-builder",
 				name: "JSON-LD Builder",
-				description:
-					"Build and validate structured data for schema.org",
+				description: "Build and validate structured data for schema.org",
 				icon: Braces,
 				path: "/preview/json-ld-builder",
-				keywords: [
-					"json-ld",
-					"schema",
-					"structured",
-					"data",
-					"seo",
-				],
+				keywords: ["json-ld", "schema", "structured", "data", "seo"],
 			},
 		],
 	},

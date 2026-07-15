@@ -1,11 +1,11 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { Check, X } from "lucide-react";
+import { useState } from "react";
 import { ToolPageLayout } from "#/components/tool-page-layout";
-import { parseColor, contrastRatio, wcagLevel } from "#/lib/color";
+import { Badge } from "#/components/ui/badge";
 import { Input } from "#/components/ui/input";
 import { Label } from "#/components/ui/label";
-import { Badge } from "#/components/ui/badge";
-import { Check, X } from "lucide-react";
+import { contrastRatio, parseColor, wcagLevel } from "#/lib/color";
 
 export const Route = createFileRoute("/colors/contrast-checker")({
 	component: ContrastChecker,
@@ -96,14 +96,18 @@ function ContrastChecker() {
 
 							<div className="grid grid-cols-2 gap-4">
 								<div className="space-y-3 p-4 rounded-lg border border-border bg-card">
-									<h3 className="font-semibold text-sm text-muted-foreground">Normal Text</h3>
+									<h3 className="font-semibold text-sm text-muted-foreground">
+										Normal Text
+									</h3>
 									<div className="flex flex-col gap-2">
 										<ResultBadge passes={wcagNormal.aa} label="WCAG AA" />
 										<ResultBadge passes={wcagNormal.aaa} label="WCAG AAA" />
 									</div>
 								</div>
 								<div className="space-y-3 p-4 rounded-lg border border-border bg-card">
-									<h3 className="font-semibold text-sm text-muted-foreground">Large Text</h3>
+									<h3 className="font-semibold text-sm text-muted-foreground">
+										Large Text
+									</h3>
 									<div className="flex flex-col gap-2">
 										<ResultBadge passes={wcagLarge.aa} label="WCAG AA" />
 										<ResultBadge passes={wcagLarge.aaa} label="WCAG AAA" />
@@ -112,7 +116,9 @@ function ContrastChecker() {
 							</div>
 						</div>
 					) : (
-						<div className="text-destructive text-sm">Please enter valid colors.</div>
+						<div className="text-destructive text-sm">
+							Please enter valid colors.
+						</div>
 					)}
 				</div>
 
@@ -123,10 +129,13 @@ function ContrastChecker() {
 						color: fg?.hex ?? "inherit",
 					}}
 				>
-					<h2 className="text-4xl font-bold">The quick brown fox jumps over the lazy dog</h2>
+					<h2 className="text-4xl font-bold">
+						The quick brown fox jumps over the lazy dog
+					</h2>
 					<p className="text-lg">
-						This is how normal text will look. Good contrast ensures that text is readable
-						by everyone, regardless of visual impairments or screen glare.
+						This is how normal text will look. Good contrast ensures that text
+						is readable by everyone, regardless of visual impairments or screen
+						glare.
 					</p>
 					<div className="flex gap-4">
 						<button

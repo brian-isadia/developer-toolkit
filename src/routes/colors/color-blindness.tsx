@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { ToolPageLayout } from "#/components/tool-page-layout";
-import { parseColor, rgbToHex } from "#/lib/color";
 import { Input } from "#/components/ui/input";
 import { Label } from "#/components/ui/label";
+import { parseColor, rgbToHex } from "#/lib/color";
 
 export const Route = createFileRoute("/colors/color-blindness")({
 	component: ColorBlindnessSimulator,
@@ -12,7 +12,7 @@ export const Route = createFileRoute("/colors/color-blindness")({
 type Matrix = [
 	[number, number, number],
 	[number, number, number],
-	[number, number, number]
+	[number, number, number],
 ];
 
 const matrices: Record<string, Matrix> = {
@@ -79,11 +79,18 @@ function ColorBlindnessSimulator() {
 								className="h-24 rounded-lg shadow-inner border border-border"
 								style={{ backgroundColor: parsed.hex }}
 							/>
-							<div className="text-sm font-mono text-muted-foreground">{parsed.hex}</div>
+							<div className="text-sm font-mono text-muted-foreground">
+								{parsed.hex}
+							</div>
 						</div>
 
 						{Object.entries(matrices).map(([name, matrix]) => {
-							const sim = applyMatrix(parsed.rgb.r, parsed.rgb.g, parsed.rgb.b, matrix);
+							const sim = applyMatrix(
+								parsed.rgb.r,
+								parsed.rgb.g,
+								parsed.rgb.b,
+								matrix,
+							);
 							const hex = rgbToHex(sim);
 							return (
 								<div key={name} className="space-y-3">
@@ -92,7 +99,9 @@ function ColorBlindnessSimulator() {
 										className="h-24 rounded-lg shadow-inner border border-border"
 										style={{ backgroundColor: hex }}
 									/>
-									<div className="text-sm font-mono text-muted-foreground">{hex}</div>
+									<div className="text-sm font-mono text-muted-foreground">
+										{hex}
+									</div>
 								</div>
 							);
 						})}

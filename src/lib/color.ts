@@ -8,10 +8,7 @@ export type OKLCH = { l: number; c: number; h: number };
 
 export function hexToRgb(hex: string): RGB | null {
 	const cleaned = hex.replace(/^#/, "");
-	if (
-		!/^[0-9a-fA-F]{6}$/.test(cleaned) &&
-		!/^[0-9a-fA-F]{3}$/.test(cleaned)
-	) {
+	if (!/^[0-9a-fA-F]{6}$/.test(cleaned) && !/^[0-9a-fA-F]{3}$/.test(cleaned)) {
 		return null;
 	}
 	const expanded =
@@ -94,8 +91,7 @@ function srgbToLinear(c: number): number {
 }
 
 function linearToSrgb(c: number): number {
-	const v =
-		c <= 0.0031308 ? c * 12.92 : 1.055 * c ** (1 / 2.4) - 0.055;
+	const v = c <= 0.0031308 ? c * 12.92 : 1.055 * c ** (1 / 2.4) - 0.055;
 	return Math.round(Math.max(0, Math.min(255, v * 255)));
 }
 
@@ -231,9 +227,7 @@ export function parseColor(
 	}
 
 	// Try oklch(l c h)
-	const oklchMatch = trimmed.match(
-		/^oklch\(\s*([\d.]+)\s+([\d.]+)\s+([\d.]+)/,
-	);
+	const oklchMatch = trimmed.match(/^oklch\(\s*([\d.]+)\s+([\d.]+)\s+([\d.]+)/);
 	if (oklchMatch) {
 		const oklch = {
 			l: Number.parseFloat(oklchMatch[1]),

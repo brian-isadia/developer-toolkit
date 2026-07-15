@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ToolPageLayout } from "#/components/tool-page-layout";
-import { Textarea } from "#/components/ui/textarea";
+import { useState } from "react";
 import { CodeOutput } from "#/components/code-output";
+import { ToolPageLayout } from "#/components/tool-page-layout";
 import { Button } from "#/components/ui/button";
+import { Textarea } from "#/components/ui/textarea";
 
 export const Route = createFileRoute("/encoding/json-formatter")({
 	component: JsonFormatter,
@@ -36,8 +36,12 @@ function JsonFormatter() {
 					<div className="bg-muted px-4 py-2 border-b border-border font-semibold text-sm flex justify-between items-center h-12">
 						<span>Input JSON</span>
 						<div className="flex gap-2">
-							<Button size="sm" variant="secondary" onClick={() => format(2)}>Format</Button>
-							<Button size="sm" variant="secondary" onClick={() => format(0)}>Minify</Button>
+							<Button size="sm" variant="secondary" onClick={() => format(2)}>
+								Format
+							</Button>
+							<Button size="sm" variant="secondary" onClick={() => format(0)}>
+								Minify
+							</Button>
 						</div>
 					</div>
 					<Textarea
@@ -54,7 +58,11 @@ function JsonFormatter() {
 				<div className="flex flex-col h-full border border-border rounded-xl overflow-hidden bg-card relative">
 					<div className="bg-muted px-4 py-2 border-b border-border font-semibold text-sm flex justify-between items-center h-12">
 						<span>Output</span>
-						{error && <span className="text-destructive font-normal text-xs">{error}</span>}
+						{error && (
+							<span className="text-destructive font-normal text-xs">
+								{error}
+							</span>
+						)}
 					</div>
 					<div className="flex-1 overflow-auto bg-transparent relative h-full">
 						{output && !error ? (
