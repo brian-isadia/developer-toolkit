@@ -1,4 +1,4 @@
-# Webtoolkit 🛠️
+# Developer Webtoolkit 🛠️
 
 A modern, elegant, local-first web application featuring a rich suite of developer tools, utilities, and generators. Designed to streamline daily workflows for web developers, designers, and creators with absolute privacy and zero latency.
 
