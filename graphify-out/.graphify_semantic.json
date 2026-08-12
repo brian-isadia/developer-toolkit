@@ -1,0 +1,541 @@
+{
+  "nodes": [
+    {
+      "id": "agents_md",
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "claude_md",
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "readme_md",
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "orca_yaml",
+      "label": "orca.yaml",
+      "file_type": "document",
+      "source_file": "orca.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "src_routes_root",
+      "label": "Root Layout",
+      "file_type": "code",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "src_routetree_gen",
+      "label": "Route Tree",
+      "file_type": "code",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "src_lib_tool_registry",
+      "label": "Tool Registry",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "graphify_concept",
+      "label": "Graphify Knowledge Graph",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "openspec_concept",
+      "label": "OpenSpec Workflow",
+      "file_type": "concept",
+      "source_file": ".agents/skills/openspec-propose/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_15_webtoolkit",
+      "label": "WebToolkit Implementation Plan",
+      "file_type": "document",
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_15_webtoolkit_design",
+      "label": "WebToolkit Design Spec",
+      "file_type": "document",
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/specs/2026-07-15-webtoolkit-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "src_lib_color",
+      "label": "Color Utility Library",
+      "file_type": "code",
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Shared math library for color conversions (Hex, RGB, HSL, OKLCH)."
+    },
+    {
+      "id": "src_hooks_use_persisted_state",
+      "label": "usePersistedState Hook",
+      "file_type": "code",
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Handles localStorage persistence for tool inputs."
+    },
+    {
+      "id": "src_components_command_palette",
+      "label": "Command Palette",
+      "file_type": "code",
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Cmd+K interface for fuzzy searching tools."
+    },
+    {
+      "id": "src_routes_app",
+      "label": "App Layout Route",
+      "file_type": "code",
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Main shell rendering sidebar, content, and command palette."
+    },
+    {
+      "id": "openspec_config",
+      "label": "OpenSpec Config",
+      "file_type": "document",
+      "source_file": "/home/isadia/Projects/webtoolkit/openspec/config.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "openspec_changes_archive_2026_07_16_complete_coming_soon_tools_openspec",
+      "label": "Archived Change: Complete Coming Soon Tools",
+      "file_type": "document",
+      "source_file": "/home/isadia/Projects/webtoolkit/openspec/changes/archive/2026-07-16-complete-coming-soon-tools/.openspec.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "design_favicon_generator",
+      "label": "Favicon Generator Design",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-07-16-complete-coming-soon-tools/design.md",
+      "rationale": "Use HTML Canvas API for client-side resizing and emoji rendering to avoid server dependencies."
+    },
+    {
+      "id": "design_meta_tag_generator",
+      "label": "Meta Tag Generator Design",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-07-16-complete-coming-soon-tools/design.md"
+    },
+    {
+      "id": "design_robots_txt_builder",
+      "label": "robots.txt Builder Design",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-07-16-complete-coming-soon-tools/design.md"
+    },
+    {
+      "id": "design_open_graph_preview",
+      "label": "Open Graph Preview Design",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-07-16-complete-coming-soon-tools/design.md",
+      "rationale": "Manual input chosen over URL fetching to avoid CORS complexity and server dependencies."
+    },
+    {
+      "id": "design_responsive_breakpoint_previewer",
+      "label": "Responsive Breakpoint Previewer Design",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-07-16-complete-coming-soon-tools/design.md",
+      "rationale": "Iframe-based approach noted as limited by X-Frame-Options, primarily for local development."
+    },
+    {
+      "id": "design_json_ld_builder",
+      "label": "JSON-LD Builder Design",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-07-16-complete-coming-soon-tools/design.md"
+    },
+    {
+      "id": "capability_favicon_generator",
+      "label": "favicon-generator",
+      "file_type": "concept",
+      "source_file": "openspec/specs/favicon-generator/spec.md"
+    },
+    {
+      "id": "capability_meta_tag_generator",
+      "label": "meta-tag-generator",
+      "file_type": "concept",
+      "source_file": "openspec/specs/meta-tag-generator/spec.md"
+    },
+    {
+      "id": "capability_robots_txt_builder",
+      "label": "robots-txt-builder",
+      "file_type": "concept",
+      "source_file": "openspec/specs/robots-txt-builder/spec.md"
+    },
+    {
+      "id": "capability_open_graph_preview",
+      "label": "open-graph-preview",
+      "file_type": "concept",
+      "source_file": "openspec/specs/open-graph-preview/spec.md"
+    },
+    {
+      "id": "capability_responsive_breakpoint_previewer",
+      "label": "responsive-breakpoint-previewer",
+      "file_type": "concept",
+      "source_file": "openspec/specs/responsive-breakpoint-previewer/spec.md"
+    },
+    {
+      "id": "capability_json_ld_builder",
+      "label": "json-ld-builder",
+      "file_type": "concept",
+      "source_file": "openspec/specs/json-ld-builder/spec.md"
+    },
+    {
+      "id": "public_robots_txt",
+      "label": "Public robots.txt",
+      "file_type": "document",
+      "source_file": "public/robots.txt"
+    },
+    {
+      "id": "public_logo192_png",
+      "label": "React Logo 192px",
+      "file_type": "image",
+      "source_file": "public/logo192.png"
+    },
+    {
+      "id": "public_logo512_png",
+      "label": "React Logo 512px",
+      "file_type": "image",
+      "source_file": "public/logo512.png"
+    }
+  ],
+  "edges": [
+    {
+      "source": "agents_md",
+      "target": "src_routes_root",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_md",
+      "target": "src_routetree_gen",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_md",
+      "target": "graphify_concept",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "src_lib_tool_registry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "src_routes_root",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_15_webtoolkit",
+      "target": "docs_superpowers_specs_2026_07_15_webtoolkit_design",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_app",
+      "target": "src_components_command_palette",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_command_palette",
+      "target": "src_lib_tool_registry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_app",
+      "target": "src_lib_tool_registry",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_color",
+      "target": "src_lib_tool_registry",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "design_favicon_generator",
+      "target": "capability_favicon_generator",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "design_meta_tag_generator",
+      "target": "capability_meta_tag_generator",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "design_robots_txt_builder",
+      "target": "capability_robots_txt_builder",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "design_open_graph_preview",
+      "target": "capability_open_graph_preview",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "design_responsive_breakpoint_previewer",
+      "target": "capability_responsive_breakpoint_previewer",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "design_json_ld_builder",
+      "target": "capability_json_ld_builder",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "capability_robots_txt_builder",
+      "target": "public_robots_txt",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8
+    },
+    {
+      "source": "capability_favicon_generator",
+      "target": "public_logo192_png",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7
+    },
+    {
+      "source": "capability_favicon_generator",
+      "target": "public_logo512_png",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "webtoolkit_core_docs",
+      "label": "Core Documentation",
+      "nodes": [
+        "readme_md",
+        "agents_md",
+        "claude_md"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md"
+    },
+    {
+      "id": "graphify_system",
+      "label": "Graphify Integration",
+      "nodes": [
+        "claude_md",
+        "graphify_concept",
+        ".agents_rules_graphify_md",
+        ".agents_skills_graphify_skill_md"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "openspec_system",
+      "label": "OpenSpec Agent Skills",
+      "nodes": [
+        "openspec_concept",
+        ".agents_skills_openspec_propose_skill_md",
+        ".agents_skills_openspec_apply_skill_md",
+        ".agents_skills_openspec_explore_skill_md"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/skills/openspec-propose/SKILL.md"
+    },
+    {
+      "id": "webtoolkit_core_infrastructure",
+      "label": "WebToolkit Core Infrastructure",
+      "nodes": [
+        "src_lib_tool_registry",
+        "src_routes_app",
+        "src_components_command_palette",
+        "src_hooks_use_persisted_state"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/isadia/Projects/webtoolkit/docs/superpowers/plans/2026-07-15-webtoolkit.md"
+    },
+    {
+      "id": "coming_soon_tools_implementation",
+      "label": "Complete Coming Soon Tools",
+      "nodes": [
+        "capability_favicon_generator",
+        "capability_meta_tag_generator",
+        "capability_robots_txt_builder",
+        "capability_open_graph_preview",
+        "capability_responsive_breakpoint_previewer",
+        "capability_json_ld_builder"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "openspec/changes/archive/2026-07-16-complete-coming-soon-tools/proposal.md"
+    }
+  ],
+  "input_tokens": 148011,
+  "output_tokens": 3862
+}
