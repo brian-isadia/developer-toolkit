@@ -1,16 +1,24 @@
 import { useNavigate } from "@tanstack/react-router";
 import { Command } from "cmdk";
-import { Search } from "lucide-react";
+import { Laptop, Moon, Search, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useTheme } from "#/components/theme-provider";
 import { Dialog, DialogContent, DialogTitle } from "#/components/ui/dialog";
 import { useRecentTools } from "#/hooks/use-recent-tools";
-import { allTools, findToolByPath, toolGroups } from "#/lib/tool-registry";
+import { findToolByPath, toolGroups } from "#/lib/tool-registry";
 
 export function CommandPalette() {
 	const [open, setOpen] = useState(false);
 	const [search, setSearch] = useState("");
 	const navigate = useNavigate();
 	const { recent, addRecent } = useRecentTools();
+	const { setTheme } = useTheme();
+
+	const changeTheme = (theme: "light" | "dark" | "system") => {
+		setTheme(theme);
+		setOpen(false);
+		setSearch("");
+	};
 
 	useEffect(() => {
 		const down = (e: KeyboardEvent) => {
@@ -78,6 +86,42 @@ export function CommandPalette() {
 										<span>{tool.name}</span>
 									</Command.Item>
 								))}
+							</Command.Group>
+						)}
+
+						{("theme".includes(search.toLowerCase()) ||
+							"light".includes(search.toLowerCase()) ||
+							"dark".includes(search.toLowerCase()) ||
+							"system".includes(search.toLowerCase()) ||
+							search === "") && (
+							<Command.Group
+								heading="Theme"
+								className="px-2 py-1.5 text-xs font-medium text-muted-foreground"
+							>
+								<Command.Item
+									value="theme-light"
+									onSelect={() => changeTheme("light")}
+									className="relative flex cursor-pointer select-none items-center rounded-sm px-2 py-2.5 text-sm outline-none aria-selected:bg-accent aria-selected:text-accent-foreground"
+								>
+									<Sun className="mr-2 size-4 text-muted-foreground" />
+									<span>Use Light Theme</span>
+								</Command.Item>
+								<Command.Item
+									value="theme-dark"
+									onSelect={() => changeTheme("dark")}
+									className="relative flex cursor-pointer select-none items-center rounded-sm px-2 py-2.5 text-sm outline-none aria-selected:bg-accent aria-selected:text-accent-foreground"
+								>
+									<Moon className="mr-2 size-4 text-muted-foreground" />
+									<span>Use Dark Theme</span>
+								</Command.Item>
+								<Command.Item
+									value="theme-system"
+									onSelect={() => changeTheme("system")}
+									className="relative flex cursor-pointer select-none items-center rounded-sm px-2 py-2.5 text-sm outline-none aria-selected:bg-accent aria-selected:text-accent-foreground"
+								>
+									<Laptop className="mr-2 size-4 text-muted-foreground" />
+									<span>Use System Theme</span>
+								</Command.Item>
 							</Command.Group>
 						)}
 
