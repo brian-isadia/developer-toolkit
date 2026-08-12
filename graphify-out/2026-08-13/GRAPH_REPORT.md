@@ -1,52 +1,110 @@
-# Graph Report - .  (2026-08-13)
+# Graph Report - webtoolkit  (2026-08-13)
 
 ## Corpus Check
-- 165 files · ~96,910 words
+- 169 files · ~101,190 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 558 nodes · 1196 edges · 39 communities (26 shown, 13 thin omitted)
-- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 47 edges (avg confidence: 0.54)
-- Token cost: 148,011 input · 3,862 output
+- 919 nodes · 1511 edges · 115 communities (78 shown, 37 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 47 edges (avg confidence: 0.54)
+- Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `dfc4d224`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- Form & Input UI Primitives
-- Layout Components & Action Buttons
-- TanStack Router Auto-Generated Routes
-- Build & Lint Dev Dependencies
-- Core Application Dependencies
-- Color Utilities & Color Space Math
-- Biome Linter & Formatter Config
-- App Tool Route Definitions
-- TypeScript Compiler Configuration
-- Data Display & Swatch UI Components
-- Shadcn Component CLI Config
-- Package Manifest & Scripts
-- Navigation Tabs & Clipboard Hook
-- Dropdown Menu UI Components
-- Command Palette & Tool Scaffolding
-- Card UI Layout Components
-- App Sidebar & Tooltip Layout
-- Modal Dialog UI Components
-- Web App Manifest Config
-- Popover UI Overlay Components
-- Root App Layout & Agent Docs
-- TanStack Router Initialization
-- Favicon Generator Tool & Assets
-- Robots.txt Builder Tool Specs
-- Graphify Antigravity Plugin Hook
-- Px/Rem Unit Converter Tool
-- Line Height Calculator Tool
-- JSON-LD Builder Tool Specs
-- Meta Tag Generator Tool Specs
-- Open Graph Preview Tool Specs
-- Responsive Breakpoint Previewer Specs
-- Claude Memory & Knowledge Graph Docs
-- WebToolkit Design & Plan Specs
-- Vite Bundler Configuration
-- Archived OpenSpec Change Docs
-- OpenSpec Workflow Specification
-- OpenSpec Engine Configuration
+- tool-page-layout.tsx
+- What You Must Do When Invoked
+- routeTree.gen.ts
+- devDependencies
+- dependencies
+- color.ts
+- biome.json
+- FileRoutesByPath
+- compilerOptions
+- cn
+- components.json
+- package.json
+- favicon.tsx
+- dropdown-menu.tsx
+- tool-registry.ts
+- card.tsx
+- sidebar.tsx
+- What You Must Do When Invoked
+- manifest.json
+- ADDED Requirements
+- theme-provider.tsx
+- router.tsx
+- favicon-generator
+- robots-txt-builder
+- graphify.js
+- ADDED Requirements
+- ADDED Requirements
+- json-ld-builder
+- meta-tag-generator
+- open-graph-preview
+- responsive-breakpoint-previewer
+- CLAUDE.md
+- WebToolkit Implementation Plan
+- vite.config.ts
+- Archived Change: Complete Coming Soon Tools
+- OpenSpec Workflow
+- OpenSpec Config
+- ADDED Requirements
+- ADDED Requirements
+- .agents/skills/openspec-explore/SKILL.md
+- .claude/skills/openspec-explore/SKILL.md
+- .opencode/skills/openspec-explore/SKILL.md
+- workflows/opsx-explore.md
+- explore.md
+- Architectural Design
+- commands/opsx-explore.md
+- ADDED Requirements
+- graphify reference: extra exports and benchmark
+- graphify reference: extra exports and benchmark
+- scripts
+- Global Constraints
+- 2026-07-16-complete-coming-soon-tools/proposal.md
+- 2026-07-16-complete-coming-soon-tools/tasks.md
+- fix-code-output-theme/proposal.md
+- graphify reference: query, path, explain
+- graphify reference: query, path, explain
+- design.md
+- Requirement: Theme-Responsive Code Output Display
+- graphify reference: add a URL and watch a folder
+- graphify reference: commit hook and native CLAUDE.md integration
+- graphify reference: incremental update and cluster-only
+- graphify reference: add a URL and watch a folder
+- graphify reference: commit hook and native CLAUDE.md integration
+- graphify reference: incremental update and cluster-only
+- graphify reference: GitHub clone and cross-repo merge
+- graphify reference: transcribe video and audio
+- graphify reference: GitHub clone and cross-repo merge
+- graphify reference: transcribe video and audio
+- fix-code-output-theme/tasks.md
+- toggle.tsx
+- rules/graphify.md
+- .agents/skills/graphify/references/extraction-spec.md
+- workflows/graphify.md
+- babel-plugin-react-compiler
+- .claude/CLAUDE.md
+- .claude/skills/graphify/references/extraction-spec.md
+- jsdom
+- prism-react-renderer
+- @rolldown/plugin-babel
+- @tailwindcss/typography
+- @tanstack/devtools-vite
+- @tanstack/router-cli
+- @testing-library/dom
+- @testing-library/react
+- @types/dompurify
+- @types/node
+- typescript
+- @vitejs/plugin-react
+- vitest
+- Route
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 71 edges
@@ -54,8 +112,8 @@
 3. `FileRoutesByPath` - 42 edges
 4. `Label()` - 30 edges
 5. `Input()` - 23 edges
-6. `Button()` - 20 edges
-7. `CodeOutput()` - 19 edges
+6. `Button()` - 21 edges
+7. `CodeOutput()` - 20 edges
 8. `parseColor()` - 18 edges
 9. `compilerOptions` - 17 edges
 10. `Textarea()` - 16 edges
@@ -76,129 +134,245 @@
 - None detected.
 
 ## Hyperedges (group relationships)
-- **Core Documentation** — readme_md, agents_md, claude_md [EXTRACTED 1.00]
+- **Complete Coming Soon Tools** — capability_favicon_generator, capability_meta_tag_generator, capability_robots_txt_builder, capability_open_graph_preview, capability_responsive_breakpoint_previewer, capability_json_ld_builder [EXTRACTED 1.00]
 - **Graphify Integration** — claude_md, graphify_concept [EXTRACTED 1.00]
 - **OpenSpec Agent Skills** — openspec_concept [EXTRACTED 1.00]
+- **Core Documentation** — readme_md, agents_md, claude_md [EXTRACTED 1.00]
 - **WebToolkit Core Infrastructure** — src_lib_tool_registry, src_routes_app, src_components_command_palette, src_hooks_use_persisted_state [EXTRACTED 1.00]
-- **Complete Coming Soon Tools** — capability_favicon_generator, capability_meta_tag_generator, capability_robots_txt_builder, capability_open_graph_preview, capability_responsive_breakpoint_previewer, capability_json_ld_builder [EXTRACTED 1.00]
 
-## Communities (39 total, 13 thin omitted)
+## Communities (115 total, 37 thin omitted)
 
-### Community 0 - "Form & Input UI Primitives"
-Cohesion: 0.11
-Nodes (20): CodeOutput(), Input(), Label(), Select(), SelectContent(), SelectItem(), SelectTrigger(), SelectValue() (+12 more)
+### Community 0 - "tool-page-layout.tsx"
+Cohesion: 0.07
+Nodes (26): CodeOutput(), CopyButton(), ToolPageLayout(), Button(), buttonVariants, Input(), Label(), Select() (+18 more)
 
-### Community 1 - "Layout Components & Action Buttons"
-Cohesion: 0.10
-Nodes (13): CopyButton(), ToolPageLayout(), Button(), buttonVariants, Textarea(), findGroupByToolPath(), findToolByPath(), Route (+5 more)
+### Community 1 - "What You Must Do When Invoked"
+Cohesion: 0.08
+Nodes (24): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+16 more)
 
-### Community 2 - "TanStack Router Auto-Generated Routes"
+### Community 2 - "routeTree.gen.ts"
 Cohesion: 0.04
 Nodes (46): ColorsColorBlindnessRoute, ColorsColorConverterRoute, ColorsContrastCheckerRoute, ColorsGradientGeneratorRoute, ColorsPaletteGeneratorRoute, ColorsTailwindColorFinderRoute, ConvertersImageFormatConverterRoute, ConvertersImageToBase64Route (+38 more)
 
-### Community 3 - "Build & Lint Dev Dependencies"
-Cohesion: 0.05
-Nodes (41): babel-plugin-react-compiler, @biomejs/biome, jsdom, marked, devDependencies, babel-plugin-react-compiler, @biomejs/biome, jsdom (+33 more)
+### Community 3 - "devDependencies"
+Cohesion: 0.15
+Nodes (13): @biomejs/biome, marked, devDependencies, @biomejs/biome, marked, @types/marked, @types/react, @types/react-dom (+5 more)
 
-### Community 4 - "Core Application Dependencies"
+### Community 4 - "dependencies"
 Cohesion: 0.05
 Nodes (41): class-variance-authority, clsx, cmdk, cronstrue, dompurify, lucide-react, dependencies, class-variance-authority (+33 more)
 
-### Community 5 - "Color Utilities & Color Space Math"
+### Community 5 - "color.ts"
 Cohesion: 0.12
-Nodes (31): contrastRatio(), formatHex(), formatHsl(), formatOklch(), formatRgb(), hexToRgb(), HSL, hslToRgb() (+23 more)
+Nodes (33): contrastRatio(), formatHex(), formatHsl(), formatOklch(), formatRgb(), hexToRgb(), HSL, hslToRgb() (+25 more)
 
-### Community 6 - "Biome Linter & Formatter Config"
+### Community 6 - "biome.json"
 Cohesion: 0.07
 Nodes (28): source, assist, actions, files, ignoreUnknown, includes, formatter, enabled (+20 more)
 
-### Community 7 - "App Tool Route Definitions"
-Cohesion: 0.07
-Nodes (29): Route, Route, Route, Route, Route, Route, Route, Route (+21 more)
+### Community 7 - "FileRoutesByPath"
+Cohesion: 0.06
+Nodes (36): Route, Route, Route, Route, Route, Route, Route, Route (+28 more)
 
-### Community 8 - "TypeScript Compiler Configuration"
+### Community 8 - "compilerOptions"
 Cohesion: 0.08
 Nodes (24): DOM, DOM.Iterable, ES2022, **/*.ts, **/*.tsx, vite/client, compilerOptions, allowImportingTsExtensions (+16 more)
 
-### Community 9 - "Data Display & Swatch UI Components"
-Cohesion: 0.17
-Nodes (14): ColorSwatch(), Badge(), badgeVariants, ScrollArea(), ScrollBar(), SelectLabel(), SelectScrollDownButton(), SelectScrollUpButton() (+6 more)
+### Community 9 - "cn"
+Cohesion: 0.10
+Nodes (21): ColorSwatch(), Badge(), badgeVariants, DialogContent(), DialogDescription(), DialogFooter(), DialogHeader(), DialogOverlay() (+13 more)
 
-### Community 10 - "Shadcn Component CLI Config"
+### Community 10 - "components.json"
 Cohesion: 0.11
 Nodes (17): aliases, components, hooks, lib, ui, utils, iconLibrary, rsc (+9 more)
 
-### Community 11 - "Package Manifest & Scripts"
-Cohesion: 0.11
-Nodes (17): imports, name, pnpm, onlyBuiltDependencies, private, scripts, build, check (+9 more)
+### Community 11 - "package.json"
+Cohesion: 0.22
+Nodes (8): imports, name, pnpm, onlyBuiltDependencies, private, type, esbuild, lightningcss
 
-### Community 12 - "Navigation Tabs & Clipboard Hook"
+### Community 12 - "favicon.tsx"
 Cohesion: 0.19
 Nodes (14): Tabs(), TabsContent(), TabsList(), tabsListVariants, TabsTrigger(), useCopyToClipboard(), PaletteDisplay(), Route (+6 more)
 
-### Community 13 - "Dropdown Menu UI Components"
-Cohesion: 0.12
-Nodes (9): DropdownMenuCheckboxItem(), DropdownMenuContent(), DropdownMenuItem(), DropdownMenuLabel(), DropdownMenuRadioItem(), DropdownMenuSeparator(), DropdownMenuShortcut(), DropdownMenuSubContent() (+1 more)
+### Community 13 - "dropdown-menu.tsx"
+Cohesion: 0.13
+Nodes (13): Header(), useTheme(), DropdownMenu(), DropdownMenuCheckboxItem(), DropdownMenuContent(), DropdownMenuItem(), DropdownMenuLabel(), DropdownMenuRadioItem() (+5 more)
 
-### Community 14 - "Command Palette & Tool Scaffolding"
-Cohesion: 0.19
-Nodes (9): CommandPalette(), DialogContent(), DialogTitle(), useRecentTools(), allTools, Tool, ToolGroup, toolGroups (+1 more)
+### Community 14 - "tool-registry.ts"
+Cohesion: 0.20
+Nodes (9): CommandPalette(), Dialog(), useRecentTools(), allTools, findToolByPath(), Tool, ToolGroup, toolGroups (+1 more)
 
-### Community 15 - "Card UI Layout Components"
+### Community 15 - "card.tsx"
 Cohesion: 0.27
 Nodes (8): Card(), CardAction(), CardContent(), CardDescription(), CardFooter(), CardHeader(), CardTitle(), Route
 
-### Community 16 - "App Sidebar & Tooltip Layout"
+### Community 16 - "sidebar.tsx"
 Cohesion: 0.38
 Nodes (6): Sidebar(), Tooltip(), TooltipContent(), TooltipProvider(), TooltipTrigger(), usePersistedState()
 
-### Community 17 - "Modal Dialog UI Components"
-Cohesion: 0.22
-Nodes (5): Dialog(), DialogDescription(), DialogFooter(), DialogHeader(), DialogOverlay()
+### Community 17 - "What You Must Do When Invoked"
+Cohesion: 0.08
+Nodes (24): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+16 more)
 
-### Community 18 - "Web App Manifest Config"
+### Community 18 - "manifest.json"
 Cohesion: 0.25
 Nodes (7): background_color, display, icons, name, short_name, start_url, theme_color
 
-### Community 19 - "Popover UI Overlay Components"
-Cohesion: 0.25
-Nodes (4): PopoverContent(), PopoverDescription(), PopoverHeader(), PopoverTitle()
+### Community 19 - "ADDED Requirements"
+Cohesion: 0.10
+Nodes (20): ADDED Requirements, Requirement: Dynamic form for Article type, Requirement: Dynamic form for BreadcrumbList type, Requirement: Dynamic form for FAQ type, Requirement: Dynamic form for LocalBusiness type, Requirement: Dynamic form for Organization type, Requirement: Dynamic form for Product type, Requirement: Generate valid JSON-LD output (+12 more)
 
-### Community 20 - "Root App Layout & Agent Docs"
-Cohesion: 0.29
-Nodes (3): AppLayout(), Route, FileRoutesById
+### Community 20 - "theme-provider.tsx"
+Cohesion: 0.21
+Nodes (6): AppLayout(), Theme, ThemeContext, themeInitScript, ThemeProvider(), ThemeProviderState
 
-### Community 21 - "TanStack Router Initialization"
+### Community 21 - "router.tsx"
 Cohesion: 0.33
 Nodes (5): getRouter(), Register, @tanstack/react-router, Register, routeTree
 
-### Community 22 - "Favicon Generator Tool & Assets"
+### Community 22 - "favicon-generator"
 Cohesion: 0.50
 Nodes (4): favicon-generator, Favicon Generator Design, React Logo 192px, React Logo 512px
 
-### Community 24 - "Robots.txt Builder Tool Specs"
+### Community 24 - "robots-txt-builder"
 Cohesion: 0.67
 Nodes (3): robots-txt-builder, robots.txt Builder Design, Public robots.txt
 
+### Community 26 - "ADDED Requirements"
+Cohesion: 0.13
+Nodes (14): ADDED Requirements, Requirement: Input OG metadata manually, Requirement: Preview Discord card, Requirement: Preview Facebook card, Requirement: Preview LinkedIn card, Requirement: Preview Twitter/X card, Requirement: Switch between platform previews, Scenario: All fields populated (+6 more)
+
+### Community 27 - "ADDED Requirements"
+Cohesion: 0.14
+Nodes (13): ADDED Requirements, Requirement: Add user-agent rule groups, Requirement: Apply preset configurations, Requirement: Configure crawl-delay, Requirement: Configure sitemap URL, Requirement: Generate robots.txt output, Scenario: Rules are configured, Scenario: User adds a path rule (+5 more)
+
+### Community 39 - "ADDED Requirements"
+Cohesion: 0.17
+Nodes (11): ADDED Requirements, Requirement: Copy generated HTML, Requirement: Generate basic SEO meta tags, Requirement: Generate Open Graph meta tags, Requirement: Generate Twitter Card meta tags, Requirement: Live preview of generated HTML, Scenario: User copies output, Scenario: User fills in basic SEO fields (+3 more)
+
+### Community 40 - "ADDED Requirements"
+Cohesion: 0.17
+Nodes (11): ADDED Requirements, Requirement: Display iframe load errors gracefully, Requirement: Input URL for preview, Requirement: Select device breakpoint presets, Requirement: Show current viewport dimensions, Requirement: View all breakpoints simultaneously, Scenario: Breakpoint is selected, Scenario: Iframe blocked by target site (+3 more)
+
+### Community 41 - ".agents/skills/openspec-explore/SKILL.md"
+Cohesion: 0.18
+Nodes (10): Check for context, Ending Discovery, Guardrails, Handling Different Entry Points, OpenSpec Awareness, The Stance, What You Don't Have To Do, What You Might Do (+2 more)
+
+### Community 42 - ".claude/skills/openspec-explore/SKILL.md"
+Cohesion: 0.18
+Nodes (10): Check for context, Ending Discovery, Guardrails, Handling Different Entry Points, OpenSpec Awareness, The Stance, What You Don't Have To Do, What You Might Do (+2 more)
+
+### Community 43 - ".opencode/skills/openspec-explore/SKILL.md"
+Cohesion: 0.18
+Nodes (10): Check for context, Ending Discovery, Guardrails, Handling Different Entry Points, OpenSpec Awareness, The Stance, What You Don't Have To Do, What You Might Do (+2 more)
+
+### Community 44 - "workflows/opsx-explore.md"
+Cohesion: 0.20
+Nodes (9): Check for context, Ending Discovery, Guardrails, OpenSpec Awareness, The Stance, What You Don't Have To Do, What You Might Do, When a change exists (+1 more)
+
+### Community 45 - "explore.md"
+Cohesion: 0.20
+Nodes (9): Check for context, Ending Discovery, Guardrails, OpenSpec Awareness, The Stance, What You Don't Have To Do, What You Might Do, When a change exists (+1 more)
+
+### Community 46 - "Architectural Design"
+Cohesion: 0.20
+Nodes (9): 1. Styles (`src/styles.css`), 2. Theme Context (`src/components/theme-provider.tsx`), 3. Anti-FOUC Script (`src/routes/__root.tsx`), 4. UI Layout & Components, Architectural Design, Design Spec: Light/Dark/System Theme Toggle, Goal, Requirements (+1 more)
+
+### Community 47 - "commands/opsx-explore.md"
+Cohesion: 0.20
+Nodes (9): Check for context, Ending Discovery, Guardrails, OpenSpec Awareness, The Stance, What You Don't Have To Do, What You Might Do, When a change exists (+1 more)
+
+### Community 48 - "ADDED Requirements"
+Cohesion: 0.20
+Nodes (9): ADDED Requirements, Requirement: Download generated favicons, Requirement: Generate favicon from emoji, Requirement: Generate favicon from uploaded image, Requirement: Generate HTML link tags, Scenario: Favicons are generated, Scenario: User downloads a favicon, Scenario: User selects an emoji (+1 more)
+
+### Community 49 - "graphify reference: extra exports and benchmark"
+Cohesion: 0.22
+Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
+
+### Community 50 - "graphify reference: extra exports and benchmark"
+Cohesion: 0.22
+Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
+
+### Community 51 - "scripts"
+Cohesion: 0.22
+Nodes (9): scripts, build, check, dev, format, generate-routes, lint, start (+1 more)
+
+### Community 52 - "Global Constraints"
+Cohesion: 0.25
+Nodes (7): Global Constraints, Light/Dark Theme Toggle Implementation Plan, Task 1: CSS Variables Refactor (`src/styles.css`), Task 2: Theme Context Provider & Anti-FOUC Script, Task 3: Header Component & Theme Toggle UI, Task 4: Command Palette Theme Integration, Task 5: Complete Suite Verification & Build Check
+
+### Community 53 - "2026-07-16-complete-coming-soon-tools/proposal.md"
+Cohesion: 0.29
+Nodes (6): Capabilities, Impact, Modified Capabilities, New Capabilities, What Changes, Why
+
+### Community 54 - "2026-07-16-complete-coming-soon-tools/tasks.md"
+Cohesion: 0.29
+Nodes (6): 1. Meta Tag Generator, 2. robots.txt Builder, 3. Favicon Generator, 4. Open Graph Preview, 5. Responsive Breakpoint Previewer, 6. JSON-LD Builder
+
+### Community 55 - "fix-code-output-theme/proposal.md"
+Cohesion: 0.29
+Nodes (6): Capabilities, Impact, Modified Capabilities, New Capabilities, What Changes, Why
+
+### Community 56 - "graphify reference: query, path, explain"
+Cohesion: 0.33
+Nodes (5): For /graphify explain, For /graphify path, graphify reference: query, path, explain, Step 0 — Constrained query expansion (REQUIRED before traversal), Step 1 — Traversal
+
+### Community 57 - "graphify reference: query, path, explain"
+Cohesion: 0.33
+Nodes (5): For /graphify explain, For /graphify path, graphify reference: query, path, explain, Step 0 — Constrained query expansion (REQUIRED before traversal), Step 1 — Traversal
+
+### Community 58 - "design.md"
+Cohesion: 0.33
+Nodes (5): Context, Decision 1: Use Tailwind Semantic CSS Tokens for Background and Borders, Decisions, Goals / Non-Goals, Risks / Trade-offs
+
+### Community 59 - "Requirement: Theme-Responsive Code Output Display"
+Cohesion: 0.33
+Nodes (5): ADDED Requirements, Purpose, Requirement: Theme-Responsive Code Output Display, Scenario: Rendering in Dark Theme, Scenario: Rendering in Light Theme
+
+### Community 60 - "graphify reference: add a URL and watch a folder"
+Cohesion: 0.50
+Nodes (3): For /graphify add, For --watch, graphify reference: add a URL and watch a folder
+
+### Community 61 - "graphify reference: commit hook and native CLAUDE.md integration"
+Cohesion: 0.50
+Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify reference: commit hook and native CLAUDE.md integration
+
+### Community 62 - "graphify reference: incremental update and cluster-only"
+Cohesion: 0.50
+Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
+
+### Community 63 - "graphify reference: add a URL and watch a folder"
+Cohesion: 0.50
+Nodes (3): For /graphify add, For --watch, graphify reference: add a URL and watch a folder
+
+### Community 64 - "graphify reference: commit hook and native CLAUDE.md integration"
+Cohesion: 0.50
+Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify reference: commit hook and native CLAUDE.md integration
+
+### Community 65 - "graphify reference: incremental update and cluster-only"
+Cohesion: 0.50
+Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
+
 ## Knowledge Gaps
-- **202 isolated node(s):** `$schema`, `enabled`, `clientKind`, `useIgnoreFile`, `ignoreUnknown` (+197 more)
+- **416 isolated node(s):** `$schema`, `enabled`, `clientKind`, `useIgnoreFile`, `ignoreUnknown` (+411 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **37 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `Data Display & Swatch UI Components` to `Form & Input UI Primitives`, `Layout Components & Action Buttons`, `Navigation Tabs & Clipboard Hook`, `Dropdown Menu UI Components`, `Command Palette & Tool Scaffolding`, `Card UI Layout Components`, `App Sidebar & Tooltip Layout`, `Modal Dialog UI Components`, `Popover UI Overlay Components`?**
-  _High betweenness centrality (0.092) - this node is a cross-community bridge._
-- **Why does `dependencies` connect `Core Application Dependencies` to `Package Manifest & Scripts`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `Build & Lint Dev Dependencies` to `Package Manifest & Scripts`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+- **Why does `cn()` connect `cn` to `tool-page-layout.tsx`, `toggle.tsx`, `favicon.tsx`, `dropdown-menu.tsx`, `card.tsx`, `sidebar.tsx`?**
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **Why does `dependencies` connect `dependencies` to `package.json`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `devDependencies` connect `devDependencies` to `babel-plugin-react-compiler`, `package.json`, `jsdom`, `prism-react-renderer`, `@rolldown/plugin-babel`, `@tailwindcss/typography`, `@tanstack/devtools-vite`, `@tanstack/router-cli`, `@testing-library/dom`, `@testing-library/react`, `@types/dompurify`, `@types/node`, `typescript`, `@vitejs/plugin-react`, `vitest`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `$schema`, `enabled`, `clientKind` to the rest of the system?**
-  _202 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Form & Input UI Primitives` be split into smaller, more focused modules?**
-  _Cohesion score 0.11221507890122735 - nodes in this community are weakly interconnected._
-- **Should `Layout Components & Action Buttons` be split into smaller, more focused modules?**
-  _Cohesion score 0.09528214616096208 - nodes in this community are weakly interconnected._
-- **Should `TanStack Router Auto-Generated Routes` be split into smaller, more focused modules?**
+  _416 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `tool-page-layout.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.07094846900672143 - nodes in this community are weakly interconnected._
+- **Should `What You Must Do When Invoked` be split into smaller, more focused modules?**
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+- **Should `routeTree.gen.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._

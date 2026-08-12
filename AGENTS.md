@@ -7,50 +7,44 @@ TanStack Start (SSR) + React 19 + TanStack Router (file-based routing) + Tailwin
 ## Commands
 
 ```bash
-bun --bun run dev          # dev server on :3000
-bun --bun run build        # production build
-bun --bun run test         # vitest run
-bun --bun run lint         # biome lint
-bun --bun run format       # biome format
-bun --bun run check        # biome check (lint + format)
-bun --bun run generate-routes  # regenerate route tree
+bun --bun run dev                  # Dev server on http://localhost:3000
+bun --bun run build                # Production build
+bun --bun run test                 # Run all tests with Vitest
+bun --bun vitest run <path/to/test> # Run a single test file
+bun --bun run lint                 # Biome linting
+bun --bun run format               # Biome formatting
+bun --bun run check                # Biome check (lint + format)
+bun --bun run generate-routes      # Regenerate route tree (tsr generate)
 ```
 
-## Code style
+## Code Style & Formatting
 
-- Biome: tabs, double quotes, recommended rules.
-- Generated files excluded from lint: `src/routeTree.gen.ts`, `src/styles.css`.
-- Imports organized automatically by Biome (`organizeImports: on`).
+- Biome configuration in `biome.json` (tabs for indentation, double quotes for strings).
+- Generated/built files excluded from linting: `src/routeTree.gen.ts`, `src/styles.css`.
+- Automatic import organization enabled (`organizeImports: on`).
 
-## Path aliases
+## Path Aliases
 
-- `#/*` → `./src/*` (primary, used by shadcn and codebase)
-- `@/*` → `./src/*` (also configured, use `#/*` to match existing convention)
+- `#/*` → `./src/*` (primary convention, matches `package.json` imports and `components.json`)
+- `@/*` → `./src/*` (supported in `tsconfig.json`; prefer `#/*`)
 
 ## Routing
 
-File-based routing in `src/routes/`. Add a file there → TanStack generates the route. Root layout: `src/routes/__root.tsx`.
+- File-based routing in `src/routes/`. Root layout: `src/routes/__root.tsx`.
+- After adding or modifying route files, run `bun --bun run generate-routes` to update `src/routeTree.gen.ts`.
 
-After adding/changing routes, run `bun --bun run generate-routes` to update `src/routeTree.gen.ts`.
-
-## Adding shadcn components
+## Adding Components (shadcn/ui)
 
 ```bash
 bunx --bun shadcn@latest add <component>
 ```
+Configuration in `components.json`: `style: new-york`, `baseColor: zinc`, `iconLibrary: lucide`.
 
-Style: `new-york`, base color: `zinc`, icons: `lucide`. Config in `components.json`.
+## Knowledge Graph (graphify)
 
-## graphify
+This project maintains a knowledge graph at `graphify-out/`.
+- For codebase questions when `graphify-out/graph.json` exists, use `graphify query "<question>"`, `graphify path "<A>" "<B>"`, or `graphify explain "<concept>"`.
+- If `graphify-out/wiki/index.md` exists, use it for high-level navigation.
+- Read `graphify-out/GRAPH_REPORT.md` for broad architecture review.
+- After modifying code files, run `graphify update .` to update the knowledge graph.
 
-This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
-
-When the user types `/graphify`, use the installed graphify skill or instructions before doing anything else.
-
-Rules:
-
-- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
-- Dirty graphify-out/ files are expected after hooks or incremental updates; dirty graph files are not a reason to skip graphify. Only skip graphify if the task is about stale or incorrect graph output, or the user explicitly says not to use it.
-- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
-- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
-- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
