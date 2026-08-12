@@ -10,7 +10,7 @@ export function CodeOutput({
 	label?: string;
 }) {
 	return (
-		<div className="relative group rounded-lg border border-border bg-[oklch(0.15_0.005_285)] overflow-hidden">
+		<div className="relative group rounded-lg border border-border bg-muted/50 overflow-hidden">
 			{label && (
 				<div className="flex items-center justify-between px-4 py-2 border-b border-border">
 					<span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
