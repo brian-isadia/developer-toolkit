@@ -1,4 +1,0 @@
-worktree:
-    sharedDirectories:
-        - node_modules
-        - graphify-out/cache
