@@ -13,7 +13,7 @@ const config = defineConfig({
         tailwindcss(),
         tanstackStart(),
         nitro({
-            preset: "bun",
+            preset: process.env.VERCEL ? "vercel" : "bun",
             vercel: {
                 functions: {
                     runtime: "bun1.x",
