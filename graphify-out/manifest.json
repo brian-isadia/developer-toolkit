@@ -35,9 +35,9 @@
     "semantic_hash": "e951ab42bd08f261cd92dca2f4268c46"
   },
   "package.json": {
-    "mtime": 1784182682.7360287,
-    "ast_hash": "0b0427f99bf709cb8be9517bb3bfc417",
-    "semantic_hash": "0b0427f99bf709cb8be9517bb3bfc417"
+    "mtime": 1786576457.0411766,
+    "ast_hash": "b801e9db416a021e4f983e575f3117f9",
+    "semantic_hash": ""
   },
   "public/manifest.json": {
     "mtime": 1784075490.2477794,
@@ -435,9 +435,9 @@
     "semantic_hash": ""
   },
   "vite.config.ts": {
-    "mtime": 1784081325.7465196,
-    "ast_hash": "22c5459891cc753487f0bd852ab733fd",
-    "semantic_hash": "22c5459891cc753487f0bd852ab733fd"
+    "mtime": 1786579764.9804726,
+    "ast_hash": "5ea22e68a3f4dd96bc483b06a43a5a69",
+    "semantic_hash": ""
   },
   ".agents/skills/openspec-propose/SKILL.md": {
     "mtime": 1784179259.941769,
@@ -518,11 +518,6 @@
     "mtime": 1784181109.2606266,
     "ast_hash": "7f1fde4e36b4e4f657bd679a64b9a338",
     "semantic_hash": "7f1fde4e36b4e4f657bd679a64b9a338"
-  },
-  "orca.yaml": {
-    "mtime": 1786570384.1149192,
-    "ast_hash": "d51c56e766e6c63a4ff6395ba20543fd",
-    "semantic_hash": ""
   },
   "public/robots.txt": {
     "mtime": 1784075490.248117,

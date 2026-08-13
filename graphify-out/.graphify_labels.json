@@ -11,11 +11,11 @@
   "9": "cn",
   "10": "components.json",
   "11": "package.json",
-  "12": "popover.tsx",
+  "12": "jsdom",
   "13": "dropdown-menu.tsx",
   "14": "tool-registry.ts",
   "15": "card.tsx",
-  "16": "utils.ts",
+  "16": "sidebar.tsx",
   "17": "What You Must Do When Invoked",
   "18": "manifest.json",
   "19": "ADDED Requirements",
@@ -37,7 +37,6 @@
   "35": "Archived Change: Complete Coming Soon Tools",
   "36": "OpenSpec Workflow",
   "37": "OpenSpec Config",
-  "38": "orca.yaml",
   "39": "ADDED Requirements",
   "40": "ADDED Requirements",
   "41": ".agents/skills/openspec-explore/SKILL.md",
@@ -114,8 +113,5 @@
   "112": ".opencode/skills/openspec-archive-change/SKILL.md",
   "113": ".opencode/skills/openspec-propose/SKILL.md",
   "114": ".opencode/skills/openspec-sync-specs/SKILL.md",
-  "115": "badge.tsx",
-  "116": "keycode-info.tsx",
-  "117": "markdown-preview.tsx",
-  "118": "@biomejs/biome"
+  "116": "keycode-info.tsx"
 }

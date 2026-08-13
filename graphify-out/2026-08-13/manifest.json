@@ -445,8 +445,8 @@
     "semantic_hash": "a6be597aea95407dacaed8456e9cf072"
   },
   "AGENTS.md": {
-    "mtime": 1786570405.1971197,
-    "ast_hash": "aa19cb4a65443ef06fd75d7647c1b1ea",
+    "mtime": 1786574126.651946,
+    "ast_hash": "f06569d0107f306e05d4936bb048d26e",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -854,29 +854,34 @@
     "ast_hash": "6afcc757199575fe453cf5b8b9b11cbd",
     "semantic_hash": ""
   },
-  "openspec/changes/fix-code-output-theme/.openspec.yaml": {
+  "openspec/changes/archive/2026-08-13-fix-code-output-theme/.openspec.yaml": {
     "mtime": 1786573763.8897457,
     "ast_hash": "35e66cb8a8c7fe9c5f28e72f1aed8a42",
     "semantic_hash": ""
   },
-  "openspec/changes/fix-code-output-theme/design.md": {
+  "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md": {
     "mtime": 1786573800.1833014,
     "ast_hash": "77f763811cdd181a51e7654f8196aab9",
     "semantic_hash": ""
   },
-  "openspec/changes/fix-code-output-theme/proposal.md": {
+  "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md": {
     "mtime": 1786573783.3165314,
     "ast_hash": "85861e2a726ff5686ebeb303034ad477",
     "semantic_hash": ""
   },
-  "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md": {
+  "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md": {
     "mtime": 1786573793.0065908,
     "ast_hash": "027a284b8cc19cfe2f7e643438d106ec",
     "semantic_hash": ""
   },
-  "openspec/changes/fix-code-output-theme/tasks.md": {
+  "openspec/changes/archive/2026-08-13-fix-code-output-theme/tasks.md": {
     "mtime": 1786573929.9607584,
     "ast_hash": "481726e73304eaf4d37f45a51f517ee7",
+    "semantic_hash": ""
+  },
+  "openspec/specs/code-output-display/spec.md": {
+    "mtime": 1786574048.1514733,
+    "ast_hash": "fc77a2870ee6d6cafc7a994b1c3617e7",
     "semantic_hash": ""
   }
 }

@@ -502,16 +502,52 @@
       "norm_label": "slider()"
     },
     {
-      "label": "Switch()",
+      "label": "Tabs()",
       "file_type": "code",
-      "source_file": "src/components/ui/switch.tsx",
-      "source_location": "L6",
+      "source_file": "src/components/ui/tabs.tsx",
+      "source_location": "L7",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_components_ui_switch_switch",
+      "id": "src_components_ui_tabs_tabs",
       "community": 0,
       "community_name": "tool-page-layout.tsx",
-      "norm_label": "switch()"
+      "norm_label": "tabs()"
+    },
+    {
+      "label": "TabsContent()",
+      "file_type": "code",
+      "source_file": "src/components/ui/tabs.tsx",
+      "source_location": "L76",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_ui_tabs_tabscontent",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "tabscontent()"
+    },
+    {
+      "label": "TabsList()",
+      "file_type": "code",
+      "source_file": "src/components/ui/tabs.tsx",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_ui_tabs_tabslist",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "tabslist()"
+    },
+    {
+      "label": "TabsTrigger()",
+      "file_type": "code",
+      "source_file": "src/components/ui/tabs.tsx",
+      "source_location": "L57",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_ui_tabs_tabstrigger",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "tabstrigger()"
     },
     {
       "label": "Textarea()",
@@ -524,6 +560,18 @@
       "community": 0,
       "community_name": "tool-page-layout.tsx",
       "norm_label": "textarea()"
+    },
+    {
+      "label": "useCopyToClipboard()",
+      "file_type": "code",
+      "source_file": "src/hooks/use-copy-to-clipboard.ts",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_hooks_use_copy_to_clipboard_usecopytoclipboard",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "usecopytoclipboard()"
     },
     {
       "label": "findGroupByToolPath()",
@@ -548,6 +596,18 @@
       "community": 0,
       "community_name": "tool-page-layout.tsx",
       "norm_label": "gradientgenerator()"
+    },
+    {
+      "label": "PaletteDisplay()",
+      "file_type": "code",
+      "source_file": "src/routes/colors/palette-generator.tsx",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_routes_colors_palette_generator_palettedisplay",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "palettedisplay()"
     },
     {
       "label": "ImageFormatConverter()",
@@ -730,6 +790,30 @@
       "norm_label": "urlencodetool()"
     },
     {
+      "label": "FaviconGenerator()",
+      "file_type": "code",
+      "source_file": "src/routes/generators/favicon.tsx",
+      "source_location": "L107",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_routes_generators_favicon_favicongenerator",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "favicongenerator()"
+    },
+    {
+      "label": "loadImage()",
+      "file_type": "code",
+      "source_file": "src/routes/generators/favicon.tsx",
+      "source_location": "L98",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_routes_generators_favicon_loadimage",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "loadimage()"
+    },
+    {
       "label": "HashGenerator()",
       "file_type": "code",
       "source_file": "src/routes/generators/hash-generator.tsx",
@@ -898,30 +982,6 @@
       "norm_label": "cronparser()"
     },
     {
-      "label": "KeycodeInfo()",
-      "file_type": "code",
-      "source_file": "src/routes/utilities/keycode-info.tsx",
-      "source_location": "L10",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_routes_utilities_keycode_info_keycodeinfo",
-      "community": 0,
-      "community_name": "tool-page-layout.tsx",
-      "norm_label": "keycodeinfo()"
-    },
-    {
-      "label": "MarkdownPreview()",
-      "file_type": "code",
-      "source_file": "src/routes/utilities/markdown-preview.tsx",
-      "source_location": "L32",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_routes_utilities_markdown_preview_markdownpreview",
-      "community": 0,
-      "community_name": "tool-page-layout.tsx",
-      "norm_label": "markdownpreview()"
-    },
-    {
       "label": "RegexTester()",
       "file_type": "code",
       "source_file": "src/routes/utilities/regex-tester.tsx",
@@ -934,124 +994,124 @@
       "norm_label": "regextester()"
     },
     {
-      "label": "Tabs()",
+      "label": "Badge()",
       "file_type": "code",
-      "source_file": "src/components/ui/tabs.tsx",
-      "source_location": "L7",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L29",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_components_ui_tabs_tabs",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "tabs()"
+      "id": "src_components_ui_badge_badge",
+      "community": 115,
+      "community_name": "badge.tsx",
+      "norm_label": "badge()"
     },
     {
-      "label": "TabsContent()",
+      "label": "KeycodeInfo()",
       "file_type": "code",
-      "source_file": "src/components/ui/tabs.tsx",
-      "source_location": "L76",
+      "source_file": "src/routes/utilities/keycode-info.tsx",
+      "source_location": "L10",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_components_ui_tabs_tabscontent",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "tabscontent()"
+      "id": "src_routes_utilities_keycode_info_keycodeinfo",
+      "community": 116,
+      "community_name": "keycode-info.tsx",
+      "norm_label": "keycodeinfo()"
     },
     {
-      "label": "TabsList()",
+      "label": "MarkdownPreview()",
       "file_type": "code",
-      "source_file": "src/components/ui/tabs.tsx",
-      "source_location": "L41",
+      "source_file": "src/routes/utilities/markdown-preview.tsx",
+      "source_location": "L32",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_components_ui_tabs_tabslist",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "tabslist()"
+      "id": "src_routes_utilities_markdown_preview_markdownpreview",
+      "community": 117,
+      "community_name": "markdown-preview.tsx",
+      "norm_label": "markdownpreview()"
     },
     {
-      "label": "TabsTrigger()",
+      "label": "Popover()",
       "file_type": "code",
-      "source_file": "src/components/ui/tabs.tsx",
-      "source_location": "L57",
+      "source_file": "src/components/ui/popover.tsx",
+      "source_location": "L8",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_components_ui_tabs_tabstrigger",
+      "id": "src_components_ui_popover_popover",
       "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "tabstrigger()"
+      "community_name": "popover.tsx",
+      "norm_label": "popover()"
     },
     {
-      "label": "useCopyToClipboard()",
+      "label": "PopoverAnchor()",
       "file_type": "code",
-      "source_file": "src/hooks/use-copy-to-clipboard.ts",
-      "source_location": "L3",
+      "source_file": "src/components/ui/popover.tsx",
+      "source_location": "L42",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_hooks_use_copy_to_clipboard_usecopytoclipboard",
+      "id": "src_components_ui_popover_popoveranchor",
       "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "usecopytoclipboard()"
+      "community_name": "popover.tsx",
+      "norm_label": "popoveranchor()"
     },
     {
-      "label": "PaletteDisplay()",
+      "label": "PopoverContent()",
       "file_type": "code",
-      "source_file": "src/routes/colors/palette-generator.tsx",
+      "source_file": "src/components/ui/popover.tsx",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_ui_popover_popovercontent",
+      "community": 12,
+      "community_name": "popover.tsx",
+      "norm_label": "popovercontent()"
+    },
+    {
+      "label": "PopoverDescription()",
+      "file_type": "code",
+      "source_file": "src/components/ui/popover.tsx",
+      "source_location": "L68",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_ui_popover_popoverdescription",
+      "community": 12,
+      "community_name": "popover.tsx",
+      "norm_label": "popoverdescription()"
+    },
+    {
+      "label": "PopoverHeader()",
+      "file_type": "code",
+      "source_file": "src/components/ui/popover.tsx",
+      "source_location": "L48",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_ui_popover_popoverheader",
+      "community": 12,
+      "community_name": "popover.tsx",
+      "norm_label": "popoverheader()"
+    },
+    {
+      "label": "PopoverTitle()",
+      "file_type": "code",
+      "source_file": "src/components/ui/popover.tsx",
+      "source_location": "L58",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_ui_popover_popovertitle",
+      "community": 12,
+      "community_name": "popover.tsx",
+      "norm_label": "popovertitle()"
+    },
+    {
+      "label": "PopoverTrigger()",
+      "file_type": "code",
+      "source_file": "src/components/ui/popover.tsx",
       "source_location": "L14",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_routes_colors_palette_generator_palettedisplay",
+      "id": "src_components_ui_popover_popovertrigger",
       "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "palettedisplay()"
-    },
-    {
-      "label": "FaviconGenerator()",
-      "file_type": "code",
-      "source_file": "src/routes/generators/favicon.tsx",
-      "source_location": "L107",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_routes_generators_favicon_favicongenerator",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "favicongenerator()"
-    },
-    {
-      "label": "loadImage()",
-      "file_type": "code",
-      "source_file": "src/routes/generators/favicon.tsx",
-      "source_location": "L98",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_routes_generators_favicon_loadimage",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "loadimage()"
-    },
-    {
-      "label": "Header()",
-      "file_type": "code",
-      "source_file": "src/components/header.tsx",
-      "source_location": "L11",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_header_header",
-      "community": 13,
-      "community_name": "dropdown-menu.tsx",
-      "norm_label": "header()"
-    },
-    {
-      "label": "useTheme()",
-      "file_type": "code",
-      "source_file": "src/components/theme-provider.tsx",
-      "source_location": "L97",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_theme_provider_usetheme",
-      "community": 13,
-      "community_name": "dropdown-menu.tsx",
-      "norm_label": "usetheme()"
+      "community_name": "popover.tsx",
+      "norm_label": "popovertrigger()"
     },
     {
       "label": "DropdownMenu()",
@@ -1258,6 +1318,18 @@
       "norm_label": "commandpalette()"
     },
     {
+      "label": "useTheme()",
+      "file_type": "code",
+      "source_file": "src/components/theme-provider.tsx",
+      "source_location": "L97",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_theme_provider_usetheme",
+      "community": 14,
+      "community_name": "tool-registry.ts",
+      "norm_label": "usetheme()"
+    },
+    {
       "label": "Dialog()",
       "file_type": "code",
       "source_file": "src/components/ui/dialog.tsx",
@@ -1402,6 +1474,18 @@
       "norm_label": "home()"
     },
     {
+      "label": "Header()",
+      "file_type": "code",
+      "source_file": "src/components/header.tsx",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_header_header",
+      "community": 16,
+      "community_name": "utils.ts",
+      "norm_label": "header()"
+    },
+    {
       "label": "Sidebar()",
       "file_type": "code",
       "source_file": "src/components/sidebar.tsx",
@@ -1410,7 +1494,7 @@
       "_origin": "ast",
       "id": "src_components_sidebar_sidebar",
       "community": 16,
-      "community_name": "sidebar.tsx",
+      "community_name": "utils.ts",
       "norm_label": "sidebar()"
     },
     {
@@ -1422,7 +1506,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tooltip_tooltip",
       "community": 16,
-      "community_name": "sidebar.tsx",
+      "community_name": "utils.ts",
       "norm_label": "tooltip()"
     },
     {
@@ -1434,7 +1518,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tooltip_tooltipcontent",
       "community": 16,
-      "community_name": "sidebar.tsx",
+      "community_name": "utils.ts",
       "norm_label": "tooltipcontent()"
     },
     {
@@ -1446,7 +1530,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tooltip_tooltipprovider",
       "community": 16,
-      "community_name": "sidebar.tsx",
+      "community_name": "utils.ts",
       "norm_label": "tooltipprovider()"
     },
     {
@@ -1458,7 +1542,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tooltip_tooltiptrigger",
       "community": 16,
-      "community_name": "sidebar.tsx",
+      "community_name": "utils.ts",
       "norm_label": "tooltiptrigger()"
     },
     {
@@ -1470,7 +1554,7 @@
       "_origin": "ast",
       "id": "src_hooks_use_persisted_state_usepersistedstate",
       "community": 16,
-      "community_name": "sidebar.tsx",
+      "community_name": "utils.ts",
       "norm_label": "usepersistedstate()"
     },
     {
@@ -1906,18 +1990,6 @@
       "norm_label": "colorswatch()"
     },
     {
-      "label": "Badge()",
-      "file_type": "code",
-      "source_file": "src/components/ui/badge.tsx",
-      "source_location": "L29",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_ui_badge_badge",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "badge()"
-    },
-    {
       "label": "DialogClose()",
       "file_type": "code",
       "source_file": "src/components/ui/dialog.tsx",
@@ -2026,90 +2098,6 @@
       "norm_label": "dialogtrigger()"
     },
     {
-      "label": "Popover()",
-      "file_type": "code",
-      "source_file": "src/components/ui/popover.tsx",
-      "source_location": "L8",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_ui_popover_popover",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "popover()"
-    },
-    {
-      "label": "PopoverAnchor()",
-      "file_type": "code",
-      "source_file": "src/components/ui/popover.tsx",
-      "source_location": "L42",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_ui_popover_popoveranchor",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "popoveranchor()"
-    },
-    {
-      "label": "PopoverContent()",
-      "file_type": "code",
-      "source_file": "src/components/ui/popover.tsx",
-      "source_location": "L20",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_ui_popover_popovercontent",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "popovercontent()"
-    },
-    {
-      "label": "PopoverDescription()",
-      "file_type": "code",
-      "source_file": "src/components/ui/popover.tsx",
-      "source_location": "L68",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_ui_popover_popoverdescription",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "popoverdescription()"
-    },
-    {
-      "label": "PopoverHeader()",
-      "file_type": "code",
-      "source_file": "src/components/ui/popover.tsx",
-      "source_location": "L48",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_ui_popover_popoverheader",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "popoverheader()"
-    },
-    {
-      "label": "PopoverTitle()",
-      "file_type": "code",
-      "source_file": "src/components/ui/popover.tsx",
-      "source_location": "L58",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_ui_popover_popovertitle",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "popovertitle()"
-    },
-    {
-      "label": "PopoverTrigger()",
-      "file_type": "code",
-      "source_file": "src/components/ui/popover.tsx",
-      "source_location": "L14",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_ui_popover_popovertrigger",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "popovertrigger()"
-    },
-    {
       "label": "ScrollArea()",
       "file_type": "code",
       "source_file": "src/components/ui/scroll-area.tsx",
@@ -2192,6 +2180,18 @@
       "community": 9,
       "community_name": "cn",
       "norm_label": "separator()"
+    },
+    {
+      "label": "Switch()",
+      "file_type": "code",
+      "source_file": "src/components/ui/switch.tsx",
+      "source_location": "L6",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_ui_switch_switch",
+      "community": 9,
+      "community_name": "cn",
+      "norm_label": "switch()"
     },
     {
       "label": "cn()",
@@ -2316,15 +2316,26 @@
       "norm_label": "slider.tsx"
     },
     {
-      "label": "switch.tsx",
+      "label": "tabs.tsx",
       "file_type": "code",
-      "source_file": "src/components/ui/switch.tsx",
+      "source_file": "src/components/ui/tabs.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_ui_switch",
+      "id": "src_components_ui_tabs",
       "community": 0,
       "community_name": "tool-page-layout.tsx",
-      "norm_label": "switch.tsx"
+      "norm_label": "tabs.tsx"
+    },
+    {
+      "label": "tabsListVariants",
+      "file_type": "code",
+      "source_file": "src/components/ui/tabs.tsx",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "src_components_ui_tabs_tabslistvariants",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "tabslistvariants"
     },
     {
       "label": "textarea.tsx",
@@ -2338,6 +2349,17 @@
       "norm_label": "textarea.tsx"
     },
     {
+      "label": "use-copy-to-clipboard.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/use-copy-to-clipboard.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_hooks_use_copy_to_clipboard",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "use-copy-to-clipboard.ts"
+    },
+    {
       "label": "gradient-generator.tsx",
       "file_type": "code",
       "source_file": "src/routes/colors/gradient-generator.tsx",
@@ -2347,6 +2369,39 @@
       "community": 0,
       "community_name": "tool-page-layout.tsx",
       "norm_label": "gradient-generator.tsx"
+    },
+    {
+      "label": "palette-generator.tsx",
+      "file_type": "code",
+      "source_file": "src/routes/colors/palette-generator.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_routes_colors_palette_generator",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "palette-generator.tsx"
+    },
+    {
+      "label": "tailwind-color-finder.tsx",
+      "file_type": "code",
+      "source_file": "src/routes/colors/tailwind-color-finder.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_routes_colors_tailwind_color_finder",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "tailwind-color-finder.tsx"
+    },
+    {
+      "label": "TAILWIND_PALETTE",
+      "file_type": "code",
+      "source_file": "src/routes/colors/tailwind-color-finder.tsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "src_routes_colors_tailwind_color_finder_tailwind_palette",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "tailwind_palette"
     },
     {
       "label": "image-format-converter.tsx",
@@ -2393,6 +2448,17 @@
       "norm_label": "markdown-html.tsx"
     },
     {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/routes/converters/markdown-html.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_routes_converters_markdown_html_route",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "route"
+    },
+    {
       "label": "px-rem.tsx",
       "file_type": "code",
       "source_file": "src/routes/converters/px-rem.tsx",
@@ -2413,6 +2479,17 @@
       "community": 0,
       "community_name": "tool-page-layout.tsx",
       "norm_label": "svg-optimizer.tsx"
+    },
+    {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/routes/converters/svg-optimizer.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_routes_converters_svg_optimizer_route",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "route"
     },
     {
       "label": "border-radius.tsx",
@@ -2492,6 +2569,17 @@
       "norm_label": "base64.tsx"
     },
     {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/routes/encoding/base64.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_routes_encoding_base64_route",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "route"
+    },
+    {
       "label": "html-entity-encoder.tsx",
       "file_type": "code",
       "source_file": "src/routes/encoding/html-entity-encoder.tsx",
@@ -2503,6 +2591,17 @@
       "norm_label": "html-entity-encoder.tsx"
     },
     {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/routes/encoding/html-entity-encoder.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_routes_encoding_html_entity_encoder_route",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "route"
+    },
+    {
       "label": "json-formatter.tsx",
       "file_type": "code",
       "source_file": "src/routes/encoding/json-formatter.tsx",
@@ -2512,6 +2611,17 @@
       "community": 0,
       "community_name": "tool-page-layout.tsx",
       "norm_label": "json-formatter.tsx"
+    },
+    {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/routes/encoding/json-formatter.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_routes_encoding_json_formatter_route",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "route"
     },
     {
       "label": "jwt-decoder.tsx",
@@ -2536,6 +2646,61 @@
       "norm_label": "url-encode.tsx"
     },
     {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/routes/encoding/url-encode.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_routes_encoding_url_encode_route",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "route"
+    },
+    {
+      "label": "favicon.tsx",
+      "file_type": "code",
+      "source_file": "src/routes/generators/favicon.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_routes_generators_favicon",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "favicon.tsx"
+    },
+    {
+      "label": "BACKGROUND_COLORS",
+      "file_type": "code",
+      "source_file": "src/routes/generators/favicon.tsx",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "src_routes_generators_favicon_background_colors",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "background_colors"
+    },
+    {
+      "label": "EMOJI_PRESETS",
+      "file_type": "code",
+      "source_file": "src/routes/generators/favicon.tsx",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "src_routes_generators_favicon_emoji_presets",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "emoji_presets"
+    },
+    {
+      "label": "FAVICON_SIZES",
+      "file_type": "code",
+      "source_file": "src/routes/generators/favicon.tsx",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "src_routes_generators_favicon_favicon_sizes",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "favicon_sizes"
+    },
+    {
       "label": "hash-generator.tsx",
       "file_type": "code",
       "source_file": "src/routes/generators/hash-generator.tsx",
@@ -2545,6 +2710,17 @@
       "community": 0,
       "community_name": "tool-page-layout.tsx",
       "norm_label": "hash-generator.tsx"
+    },
+    {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/routes/generators/hash-generator.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "src_routes_generators_hash_generator_route",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "route"
     },
     {
       "label": "lorem-ipsum.tsx",
@@ -2657,6 +2833,17 @@
       "norm_label": "breakpoints"
     },
     {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/routes/preview/responsive-breakpoints.tsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_routes_preview_responsive_breakpoints_route",
+      "community": 0,
+      "community_name": "tool-page-layout.tsx",
+      "norm_label": "route"
+    },
+    {
       "label": "fluid-type-scale.tsx",
       "file_type": "code",
       "source_file": "src/routes/typography/fluid-type-scale.tsx",
@@ -2721,28 +2908,6 @@
       "community": 0,
       "community_name": "tool-page-layout.tsx",
       "norm_label": "cron-parser.tsx"
-    },
-    {
-      "label": "keycode-info.tsx",
-      "file_type": "code",
-      "source_file": "src/routes/utilities/keycode-info.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_routes_utilities_keycode_info",
-      "community": 0,
-      "community_name": "tool-page-layout.tsx",
-      "norm_label": "keycode-info.tsx"
-    },
-    {
-      "label": "markdown-preview.tsx",
-      "file_type": "code",
-      "source_file": "src/routes/utilities/markdown-preview.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_routes_utilities_markdown_preview",
-      "community": 0,
-      "community_name": "tool-page-layout.tsx",
-      "norm_label": "markdown-preview.tsx"
     },
     {
       "label": "regex-tester.tsx",
@@ -3493,114 +3658,103 @@
       "norm_label": ".opencode/skills/openspec-sync-specs/skill.md"
     },
     {
-      "label": "tabs.tsx",
+      "label": "badge.tsx",
       "file_type": "code",
-      "source_file": "src/components/ui/tabs.tsx",
+      "source_file": "src/components/ui/badge.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_ui_tabs",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "tabs.tsx"
+      "id": "src_components_ui_badge",
+      "community": 115,
+      "community_name": "badge.tsx",
+      "norm_label": "badge.tsx"
     },
     {
-      "label": "tabsListVariants",
+      "label": "badgeVariants",
       "file_type": "code",
-      "source_file": "src/components/ui/tabs.tsx",
-      "source_location": "L26",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "src_components_ui_tabs_tabslistvariants",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "tabslistvariants"
+      "id": "src_components_ui_badge_badgevariants",
+      "community": 115,
+      "community_name": "badge.tsx",
+      "norm_label": "badgevariants"
     },
     {
-      "label": "use-copy-to-clipboard.ts",
+      "label": "keycode-info.tsx",
       "file_type": "code",
-      "source_file": "src/hooks/use-copy-to-clipboard.ts",
+      "source_file": "src/routes/utilities/keycode-info.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_hooks_use_copy_to_clipboard",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "use-copy-to-clipboard.ts"
-    },
-    {
-      "label": "palette-generator.tsx",
-      "file_type": "code",
-      "source_file": "src/routes/colors/palette-generator.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_routes_colors_palette_generator",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "palette-generator.tsx"
+      "id": "src_routes_utilities_keycode_info",
+      "community": 116,
+      "community_name": "keycode-info.tsx",
+      "norm_label": "keycode-info.tsx"
     },
     {
       "label": "Route",
       "file_type": "code",
-      "source_file": "src/routes/colors/palette-generator.tsx",
-      "source_location": "L10",
+      "source_file": "src/routes/utilities/keycode-info.tsx",
+      "source_location": "L6",
       "_origin": "ast",
-      "id": "src_routes_colors_palette_generator_route",
-      "community": 12,
-      "community_name": "favicon.tsx",
+      "id": "src_routes_utilities_keycode_info_route",
+      "community": 116,
+      "community_name": "keycode-info.tsx",
       "norm_label": "route"
     },
     {
-      "label": "favicon.tsx",
+      "label": "markdown-preview.tsx",
       "file_type": "code",
-      "source_file": "src/routes/generators/favicon.tsx",
+      "source_file": "src/routes/utilities/markdown-preview.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_routes_generators_favicon",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "favicon.tsx"
-    },
-    {
-      "label": "BACKGROUND_COLORS",
-      "file_type": "code",
-      "source_file": "src/routes/generators/favicon.tsx",
-      "source_location": "L88",
-      "_origin": "ast",
-      "id": "src_routes_generators_favicon_background_colors",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "background_colors"
-    },
-    {
-      "label": "EMOJI_PRESETS",
-      "file_type": "code",
-      "source_file": "src/routes/generators/favicon.tsx",
-      "source_location": "L33",
-      "_origin": "ast",
-      "id": "src_routes_generators_favicon_emoji_presets",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "emoji_presets"
-    },
-    {
-      "label": "FAVICON_SIZES",
-      "file_type": "code",
-      "source_file": "src/routes/generators/favicon.tsx",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "src_routes_generators_favicon_favicon_sizes",
-      "community": 12,
-      "community_name": "favicon.tsx",
-      "norm_label": "favicon_sizes"
+      "id": "src_routes_utilities_markdown_preview",
+      "community": 117,
+      "community_name": "markdown-preview.tsx",
+      "norm_label": "markdown-preview.tsx"
     },
     {
       "label": "Route",
       "file_type": "code",
-      "source_file": "src/routes/generators/favicon.tsx",
-      "source_location": "L18",
+      "source_file": "src/routes/utilities/markdown-preview.tsx",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "src_routes_generators_favicon_route",
-      "community": 12,
-      "community_name": "favicon.tsx",
+      "id": "src_routes_utilities_markdown_preview_route",
+      "community": 117,
+      "community_name": "markdown-preview.tsx",
       "norm_label": "route"
+    },
+    {
+      "label": "@biomejs/biome",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "package_devdependencies_biomejs_biome",
+      "community": 118,
+      "community_name": "@biomejs/biome",
+      "norm_label": "@biomejs/biome"
+    },
+    {
+      "label": "@biomejs/biome",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "biomejs_biome",
+      "community": 118,
+      "community_name": "@biomejs/biome",
+      "norm_label": "@biomejs/biome"
+    },
+    {
+      "label": "popover.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/popover.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_ui_popover",
+      "community": 12,
+      "community_name": "popover.tsx",
+      "norm_label": "popover.tsx"
     },
     {
       "label": "header.tsx",
@@ -3731,7 +3885,7 @@
       "_origin": "ast",
       "id": "src_components_app_layout",
       "community": 16,
-      "community_name": "sidebar.tsx",
+      "community_name": "utils.ts",
       "norm_label": "app-layout.tsx"
     },
     {
@@ -3742,7 +3896,7 @@
       "_origin": "ast",
       "id": "src_components_sidebar",
       "community": 16,
-      "community_name": "sidebar.tsx",
+      "community_name": "utils.ts",
       "norm_label": "sidebar.tsx"
     },
     {
@@ -3753,7 +3907,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tooltip",
       "community": 16,
-      "community_name": "sidebar.tsx",
+      "community_name": "utils.ts",
       "norm_label": "tooltip.tsx"
     },
     {
@@ -3764,8 +3918,19 @@
       "_origin": "ast",
       "id": "src_hooks_use_persisted_state",
       "community": 16,
-      "community_name": "sidebar.tsx",
+      "community_name": "utils.ts",
       "norm_label": "use-persisted-state.ts"
+    },
+    {
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_utils",
+      "community": 16,
+      "community_name": "utils.ts",
+      "norm_label": "utils.ts"
     },
     {
       "label": ".claude/skills/graphify/SKILL.md",
@@ -5286,15 +5451,15 @@
       "norm_label": "devdependencies"
     },
     {
-      "label": "@biomejs/biome",
+      "label": "jsdom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L55",
       "_origin": "ast",
-      "id": "package_devdependencies_biomejs_biome",
+      "id": "package_devdependencies_jsdom",
       "community": 3,
       "community_name": "devDependencies",
-      "norm_label": "@biomejs/biome"
+      "norm_label": "jsdom"
     },
     {
       "label": "marked",
@@ -5352,15 +5517,15 @@
       "norm_label": "vite"
     },
     {
-      "label": "@biomejs/biome",
+      "label": "jsdom",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L55",
       "_origin": "ast",
-      "id": "biomejs_biome",
+      "id": "jsdom",
       "community": 3,
       "community_name": "devDependencies",
-      "norm_label": "@biomejs/biome"
+      "norm_label": "jsdom"
     },
     {
       "label": "marked",
@@ -7211,17 +7376,6 @@
       "norm_label": "matrices"
     },
     {
-      "label": "Route",
-      "file_type": "code",
-      "source_file": "src/routes/colors/color-blindness.tsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "src_routes_colors_color_blindness_route",
-      "community": 5,
-      "community_name": "color.ts",
-      "norm_label": "route"
-    },
-    {
       "label": "color-converter.tsx",
       "file_type": "code",
       "source_file": "src/routes/colors/color-converter.tsx",
@@ -7231,6 +7385,17 @@
       "community": 5,
       "community_name": "color.ts",
       "norm_label": "color-converter.tsx"
+    },
+    {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/routes/colors/color-converter.tsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_routes_colors_color_converter_route",
+      "community": 5,
+      "community_name": "color.ts",
+      "norm_label": "route"
     },
     {
       "label": "contrast-checker.tsx",
@@ -7253,28 +7418,6 @@
       "community": 5,
       "community_name": "color.ts",
       "norm_label": "route"
-    },
-    {
-      "label": "tailwind-color-finder.tsx",
-      "file_type": "code",
-      "source_file": "src/routes/colors/tailwind-color-finder.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_routes_colors_tailwind_color_finder",
-      "community": 5,
-      "community_name": "color.ts",
-      "norm_label": "tailwind-color-finder.tsx"
-    },
-    {
-      "label": "TAILWIND_PALETTE",
-      "file_type": "code",
-      "source_file": "src/routes/colors/tailwind-color-finder.tsx",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "src_routes_colors_tailwind_color_finder_tailwind_palette",
-      "community": 5,
-      "community_name": "color.ts",
-      "norm_label": "tailwind_palette"
     },
     {
       "label": ".claude/skills/graphify/references/exports.md",
@@ -7717,80 +7860,80 @@
       "norm_label": "6. json-ld builder"
     },
     {
-      "label": "fix-code-output-theme/proposal.md",
+      "label": "2026-08-13-fix-code-output-theme/proposal.md",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_proposal",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal",
       "community": 55,
-      "community_name": "fix-code-output-theme/proposal.md",
-      "norm_label": "fix-code-output-theme/proposal.md"
+      "community_name": "2026-08-13-fix-code-output-theme/proposal.md",
+      "norm_label": "2026-08-13-fix-code-output-theme/proposal.md"
     },
     {
       "label": "Capabilities",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_proposal_capabilities",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_capabilities",
       "community": 55,
-      "community_name": "fix-code-output-theme/proposal.md",
+      "community_name": "2026-08-13-fix-code-output-theme/proposal.md",
       "norm_label": "capabilities"
     },
     {
       "label": "Impact",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_proposal_impact",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_impact",
       "community": 55,
-      "community_name": "fix-code-output-theme/proposal.md",
+      "community_name": "2026-08-13-fix-code-output-theme/proposal.md",
       "norm_label": "impact"
     },
     {
       "label": "Modified Capabilities",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_proposal_modified_capabilities",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_modified_capabilities",
       "community": 55,
-      "community_name": "fix-code-output-theme/proposal.md",
+      "community_name": "2026-08-13-fix-code-output-theme/proposal.md",
       "norm_label": "modified capabilities"
     },
     {
       "label": "New Capabilities",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_proposal_new_capabilities",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_new_capabilities",
       "community": 55,
-      "community_name": "fix-code-output-theme/proposal.md",
+      "community_name": "2026-08-13-fix-code-output-theme/proposal.md",
       "norm_label": "new capabilities"
     },
     {
       "label": "What Changes",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_proposal_what_changes",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_what_changes",
       "community": 55,
-      "community_name": "fix-code-output-theme/proposal.md",
+      "community_name": "2026-08-13-fix-code-output-theme/proposal.md",
       "norm_label": "what changes"
     },
     {
       "label": "Why",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_proposal_why",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_why",
       "community": 55,
-      "community_name": "fix-code-output-theme/proposal.md",
+      "community_name": "2026-08-13-fix-code-output-theme/proposal.md",
       "norm_label": "why"
     },
     {
@@ -7926,136 +8069,147 @@
       "norm_label": "step 1 \u2014 traversal"
     },
     {
-      "label": "design.md",
+      "label": "openspec/specs/code-output-display/spec.md",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/specs/code-output-display/spec.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_design",
+      "id": "openspec_specs_code_output_display_spec",
       "community": 58,
+      "community_name": "Capability: code-output-display",
+      "norm_label": "openspec/specs/code-output-display/spec.md"
+    },
+    {
+      "label": "Capability: code-output-display",
+      "file_type": "document",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_specs_code_output_display_spec_capability_code_output_display",
+      "community": 58,
+      "community_name": "Capability: code-output-display",
+      "norm_label": "capability: code-output-display"
+    },
+    {
+      "label": "Purpose",
+      "file_type": "document",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "openspec_specs_code_output_display_spec_purpose",
+      "community": 58,
+      "community_name": "Capability: code-output-display",
+      "norm_label": "purpose"
+    },
+    {
+      "label": "Requirement: Theme-Responsive Code Output Display",
+      "file_type": "document",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "openspec_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
+      "community": 58,
+      "community_name": "Capability: code-output-display",
+      "norm_label": "requirement: theme-responsive code output display"
+    },
+    {
+      "label": "Requirements",
+      "file_type": "document",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "openspec_specs_code_output_display_spec_requirements",
+      "community": 58,
+      "community_name": "Capability: code-output-display",
+      "norm_label": "requirements"
+    },
+    {
+      "label": "Scenario: Rendering in Dark Theme",
+      "file_type": "document",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "openspec_specs_code_output_display_spec_scenario_rendering_in_dark_theme",
+      "community": 58,
+      "community_name": "Capability: code-output-display",
+      "norm_label": "scenario: rendering in dark theme"
+    },
+    {
+      "label": "Scenario: Rendering in Light Theme",
+      "file_type": "document",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "openspec_specs_code_output_display_spec_scenario_rendering_in_light_theme",
+      "community": 58,
+      "community_name": "Capability: code-output-display",
+      "norm_label": "scenario: rendering in light theme"
+    },
+    {
+      "label": "design.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design",
+      "community": 59,
       "community_name": "design.md",
       "norm_label": "design.md"
     },
     {
       "label": "Context",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_design_context",
-      "community": 58,
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_context",
+      "community": 59,
       "community_name": "design.md",
       "norm_label": "context"
     },
     {
       "label": "Decision 1: Use Tailwind Semantic CSS Tokens for Background and Borders",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_design_decision_1_use_tailwind_semantic_css_tokens_for_background_and_borders",
-      "community": 58,
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_decision_1_use_tailwind_semantic_css_tokens_for_background_and_borders",
+      "community": 59,
       "community_name": "design.md",
       "norm_label": "decision 1: use tailwind semantic css tokens for background and borders"
     },
     {
       "label": "Decisions",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_design_decisions",
-      "community": 58,
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_decisions",
+      "community": 59,
       "community_name": "design.md",
       "norm_label": "decisions"
     },
     {
       "label": "Goals / Non-Goals",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_design_goals_non_goals",
-      "community": 58,
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_goals_non_goals",
+      "community": 59,
       "community_name": "design.md",
       "norm_label": "goals / non-goals"
     },
     {
       "label": "Risks / Trade-offs",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_design_risks_trade_offs",
-      "community": 58,
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_risks_trade_offs",
+      "community": 59,
       "community_name": "design.md",
       "norm_label": "risks / trade-offs"
-    },
-    {
-      "label": "code-output-display/spec.md",
-      "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec",
-      "community": 59,
-      "community_name": "Requirement: Theme-Responsive Code Output Display",
-      "norm_label": "code-output-display/spec.md"
-    },
-    {
-      "label": "ADDED Requirements",
-      "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_added_requirements",
-      "community": 59,
-      "community_name": "Requirement: Theme-Responsive Code Output Display",
-      "norm_label": "added requirements"
-    },
-    {
-      "label": "Purpose",
-      "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_purpose",
-      "community": 59,
-      "community_name": "Requirement: Theme-Responsive Code Output Display",
-      "norm_label": "purpose"
-    },
-    {
-      "label": "Requirement: Theme-Responsive Code Output Display",
-      "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
-      "community": 59,
-      "community_name": "Requirement: Theme-Responsive Code Output Display",
-      "norm_label": "requirement: theme-responsive code output display"
-    },
-    {
-      "label": "Scenario: Rendering in Dark Theme",
-      "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_scenario_rendering_in_dark_theme",
-      "community": 59,
-      "community_name": "Requirement: Theme-Responsive Code Output Display",
-      "norm_label": "scenario: rendering in dark theme"
-    },
-    {
-      "label": "Scenario: Rendering in Light Theme",
-      "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_scenario_rendering_in_light_theme",
-      "community": 59,
-      "community_name": "Requirement: Theme-Responsive Code Output Display",
-      "norm_label": "scenario: rendering in light theme"
     },
     {
       "label": "biome.json",
@@ -8775,10 +8929,10 @@
     {
       "label": "Route",
       "file_type": "code",
-      "source_file": "src/routes/colors/color-converter.tsx",
-      "source_location": "L16",
+      "source_file": "src/routes/colors/color-blindness.tsx",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "src_routes_colors_color_converter_route",
+      "id": "src_routes_colors_color_blindness_route",
       "community": 7,
       "community_name": "FileRoutesByPath",
       "norm_label": "route"
@@ -8790,6 +8944,17 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "src_routes_colors_gradient_generator_route",
+      "community": 7,
+      "community_name": "FileRoutesByPath",
+      "norm_label": "route"
+    },
+    {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/routes/colors/palette-generator.tsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "src_routes_colors_palette_generator_route",
       "community": 7,
       "community_name": "FileRoutesByPath",
       "norm_label": "route"
@@ -8830,32 +8995,10 @@
     {
       "label": "Route",
       "file_type": "code",
-      "source_file": "src/routes/converters/markdown-html.tsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "src_routes_converters_markdown_html_route",
-      "community": 7,
-      "community_name": "FileRoutesByPath",
-      "norm_label": "route"
-    },
-    {
-      "label": "Route",
-      "file_type": "code",
       "source_file": "src/routes/converters/px-rem.tsx",
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_routes_converters_px_rem_route",
-      "community": 7,
-      "community_name": "FileRoutesByPath",
-      "norm_label": "route"
-    },
-    {
-      "label": "Route",
-      "file_type": "code",
-      "source_file": "src/routes/converters/svg-optimizer.tsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "src_routes_converters_svg_optimizer_route",
       "community": 7,
       "community_name": "FileRoutesByPath",
       "norm_label": "route"
@@ -8918,39 +9061,6 @@
     {
       "label": "Route",
       "file_type": "code",
-      "source_file": "src/routes/encoding/base64.tsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "src_routes_encoding_base64_route",
-      "community": 7,
-      "community_name": "FileRoutesByPath",
-      "norm_label": "route"
-    },
-    {
-      "label": "Route",
-      "file_type": "code",
-      "source_file": "src/routes/encoding/html-entity-encoder.tsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "src_routes_encoding_html_entity_encoder_route",
-      "community": 7,
-      "community_name": "FileRoutesByPath",
-      "norm_label": "route"
-    },
-    {
-      "label": "Route",
-      "file_type": "code",
-      "source_file": "src/routes/encoding/json-formatter.tsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "src_routes_encoding_json_formatter_route",
-      "community": 7,
-      "community_name": "FileRoutesByPath",
-      "norm_label": "route"
-    },
-    {
-      "label": "Route",
-      "file_type": "code",
       "source_file": "src/routes/encoding/jwt-decoder.tsx",
       "source_location": "L7",
       "_origin": "ast",
@@ -8962,21 +9072,10 @@
     {
       "label": "Route",
       "file_type": "code",
-      "source_file": "src/routes/encoding/url-encode.tsx",
-      "source_location": "L8",
+      "source_file": "src/routes/generators/favicon.tsx",
+      "source_location": "L18",
       "_origin": "ast",
-      "id": "src_routes_encoding_url_encode_route",
-      "community": 7,
-      "community_name": "FileRoutesByPath",
-      "norm_label": "route"
-    },
-    {
-      "label": "Route",
-      "file_type": "code",
-      "source_file": "src/routes/generators/hash-generator.tsx",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "src_routes_generators_hash_generator_route",
+      "id": "src_routes_generators_favicon_route",
       "community": 7,
       "community_name": "FileRoutesByPath",
       "norm_label": "route"
@@ -9061,17 +9160,6 @@
     {
       "label": "Route",
       "file_type": "code",
-      "source_file": "src/routes/preview/responsive-breakpoints.tsx",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "src_routes_preview_responsive_breakpoints_route",
-      "community": 7,
-      "community_name": "FileRoutesByPath",
-      "norm_label": "route"
-    },
-    {
-      "label": "Route",
-      "file_type": "code",
       "source_file": "src/routes/typography/fluid-type-scale.tsx",
       "source_location": "L8",
       "_origin": "ast",
@@ -9127,28 +9215,6 @@
     {
       "label": "Route",
       "file_type": "code",
-      "source_file": "src/routes/utilities/keycode-info.tsx",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "src_routes_utilities_keycode_info_route",
-      "community": 7,
-      "community_name": "FileRoutesByPath",
-      "norm_label": "route"
-    },
-    {
-      "label": "Route",
-      "file_type": "code",
-      "source_file": "src/routes/utilities/markdown-preview.tsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "src_routes_utilities_markdown_preview_route",
-      "community": 7,
-      "community_name": "FileRoutesByPath",
-      "norm_label": "route"
-    },
-    {
-      "label": "Route",
-      "file_type": "code",
       "source_file": "src/routes/utilities/regex-tester.tsx",
       "source_location": "L8",
       "_origin": "ast",
@@ -9158,37 +9224,70 @@
       "norm_label": "route"
     },
     {
-      "label": "fix-code-output-theme/tasks.md",
+      "label": "2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/tasks.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_tasks",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec",
       "community": 70,
-      "community_name": "fix-code-output-theme/tasks.md",
-      "norm_label": "fix-code-output-theme/tasks.md"
+      "community_name": "Requirement: Theme-Responsive Code Output Display",
+      "norm_label": "2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md"
     },
     {
-      "label": "1. Component Implementation",
+      "label": "ADDED Requirements",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/tasks.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_added_requirements",
+      "community": 70,
+      "community_name": "Requirement: Theme-Responsive Code Output Display",
+      "norm_label": "added requirements"
+    },
+    {
+      "label": "Purpose",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_tasks_1_component_implementation",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_purpose",
       "community": 70,
-      "community_name": "fix-code-output-theme/tasks.md",
-      "norm_label": "1. component implementation"
+      "community_name": "Requirement: Theme-Responsive Code Output Display",
+      "norm_label": "purpose"
     },
     {
-      "label": "2. Verification",
+      "label": "Requirement: Theme-Responsive Code Output Display",
       "file_type": "document",
-      "source_file": "openspec/changes/fix-code-output-theme/tasks.md",
-      "source_location": "L6",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "openspec_changes_fix_code_output_theme_tasks_2_verification",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
       "community": 70,
-      "community_name": "fix-code-output-theme/tasks.md",
-      "norm_label": "2. verification"
+      "community_name": "Requirement: Theme-Responsive Code Output Display",
+      "norm_label": "requirement: theme-responsive code output display"
+    },
+    {
+      "label": "Scenario: Rendering in Dark Theme",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_scenario_rendering_in_dark_theme",
+      "community": 70,
+      "community_name": "Requirement: Theme-Responsive Code Output Display",
+      "norm_label": "scenario: rendering in dark theme"
+    },
+    {
+      "label": "Scenario: Rendering in Light Theme",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_scenario_rendering_in_light_theme",
+      "community": 70,
+      "community_name": "Requirement: Theme-Responsive Code Output Display",
+      "norm_label": "scenario: rendering in light theme"
     },
     {
       "label": "toggle.tsx",
@@ -9345,26 +9444,37 @@
       "norm_label": "graphify reference: extraction subagent prompt"
     },
     {
-      "label": "jsdom",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L55",
+      "label": "2026-08-13-fix-code-output-theme/tasks.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/tasks.md",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "package_devdependencies_jsdom",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_tasks",
       "community": 78,
-      "community_name": "jsdom",
-      "norm_label": "jsdom"
+      "community_name": "2026-08-13-fix-code-output-theme/tasks.md",
+      "norm_label": "2026-08-13-fix-code-output-theme/tasks.md"
     },
     {
-      "label": "jsdom",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L55",
+      "label": "1. Component Implementation",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/tasks.md",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "jsdom",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_tasks_1_component_implementation",
       "community": 78,
-      "community_name": "jsdom",
-      "norm_label": "jsdom"
+      "community_name": "2026-08-13-fix-code-output-theme/tasks.md",
+      "norm_label": "1. component implementation"
+    },
+    {
+      "label": "2. Verification",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/tasks.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "openspec_changes_archive_2026_08_13_fix_code_output_theme_tasks_2_verification",
+      "community": 78,
+      "community_name": "2026-08-13-fix-code-output-theme/tasks.md",
+      "norm_label": "2. verification"
     },
     {
       "label": "prism-react-renderer",
@@ -9895,28 +10005,6 @@
       "norm_label": "color-swatch.tsx"
     },
     {
-      "label": "badge.tsx",
-      "file_type": "code",
-      "source_file": "src/components/ui/badge.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_components_ui_badge",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "badge.tsx"
-    },
-    {
-      "label": "badgeVariants",
-      "file_type": "code",
-      "source_file": "src/components/ui/badge.tsx",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "src_components_ui_badge_badgevariants",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "badgevariants"
-    },
-    {
       "label": "dialog.tsx",
       "file_type": "code",
       "source_file": "src/components/ui/dialog.tsx",
@@ -9926,17 +10014,6 @@
       "community": 9,
       "community_name": "cn",
       "norm_label": "dialog.tsx"
-    },
-    {
-      "label": "popover.tsx",
-      "file_type": "code",
-      "source_file": "src/components/ui/popover.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_components_ui_popover",
-      "community": 9,
-      "community_name": "cn",
-      "norm_label": "popover.tsx"
     },
     {
       "label": "scroll-area.tsx",
@@ -9961,15 +10038,15 @@
       "norm_label": "separator.tsx"
     },
     {
-      "label": "utils.ts",
+      "label": "switch.tsx",
       "file_type": "code",
-      "source_file": "src/lib/utils.ts",
+      "source_file": "src/components/ui/switch.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_lib_utils",
+      "id": "src_components_ui_switch",
       "community": 9,
       "community_name": "cn",
-      "norm_label": "utils.ts"
+      "norm_label": "switch.tsx"
     },
     {
       "label": "vitest",
@@ -23474,199 +23551,265 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_design",
-      "target": "openspec_changes_fix_code_output_theme_design_context",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_context",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_design",
-      "target": "openspec_changes_fix_code_output_theme_design_decisions",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_decisions",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
       "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_design",
-      "target": "openspec_changes_fix_code_output_theme_design_risks_trade_offs",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_risks_trade_offs",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_design",
-      "target": "openspec_changes_fix_code_output_theme_design_goals_non_goals",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_goals_non_goals",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/design.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/design.md",
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_design_decisions",
-      "target": "openspec_changes_fix_code_output_theme_design_decision_1_use_tailwind_semantic_css_tokens_for_background_and_borders",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_decisions",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_design_decision_1_use_tailwind_semantic_css_tokens_for_background_and_borders",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_proposal",
-      "target": "openspec_changes_fix_code_output_theme_proposal_why",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_why",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_proposal",
-      "target": "openspec_changes_fix_code_output_theme_proposal_capabilities",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_capabilities",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_proposal",
-      "target": "openspec_changes_fix_code_output_theme_proposal_impact",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_impact",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_proposal",
-      "target": "openspec_changes_fix_code_output_theme_proposal_what_changes",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_what_changes",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_proposal_capabilities",
-      "target": "openspec_changes_fix_code_output_theme_proposal_new_capabilities",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_capabilities",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_new_capabilities",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/proposal.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/proposal.md",
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_proposal_capabilities",
-      "target": "openspec_changes_fix_code_output_theme_proposal_modified_capabilities",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_capabilities",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_proposal_modified_capabilities",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec",
-      "target": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_purpose",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_purpose",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec",
-      "target": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_added_requirements",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_added_requirements",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_added_requirements",
-      "target": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_added_requirements",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
-      "target": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_scenario_rendering_in_light_theme",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_scenario_rendering_in_light_theme",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/specs/code-output-display/spec.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/specs/code-output-display/spec.md",
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
-      "target": "openspec_changes_fix_code_output_theme_specs_code_output_display_spec_scenario_rendering_in_dark_theme",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_specs_code_output_display_spec_scenario_rendering_in_dark_theme",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/tasks.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/tasks.md",
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_tasks",
-      "target": "openspec_changes_fix_code_output_theme_tasks_1_component_implementation",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_tasks",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_tasks_1_component_implementation",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "openspec/changes/fix-code-output-theme/tasks.md",
+      "source_file": "openspec/changes/archive/2026-08-13-fix-code-output-theme/tasks.md",
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "openspec_changes_fix_code_output_theme_tasks",
-      "target": "openspec_changes_fix_code_output_theme_tasks_2_verification",
+      "source": "openspec_changes_archive_2026_08_13_fix_code_output_theme_tasks",
+      "target": "openspec_changes_archive_2026_08_13_fix_code_output_theme_tasks_2_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_specs_code_output_display_spec",
+      "target": "openspec_specs_code_output_display_spec_capability_code_output_display",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_specs_code_output_display_spec_capability_code_output_display",
+      "target": "openspec_specs_code_output_display_spec_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_specs_code_output_display_spec_capability_code_output_display",
+      "target": "openspec_specs_code_output_display_spec_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
+      "target": "openspec_specs_code_output_display_spec_scenario_rendering_in_light_theme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
+      "target": "openspec_specs_code_output_display_spec_scenario_rendering_in_dark_theme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/specs/code-output-display/spec.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_specs_code_output_display_spec_requirements",
+      "target": "openspec_specs_code_output_display_spec_requirement_theme_responsive_code_output_display",
       "confidence_score": 1.0
     },
     {
@@ -27941,5 +28084,5 @@
       "source_file": "docs/superpowers/plans/2026-07-15-webtoolkit.md"
     }
   ],
-  "built_at_commit": "dfc4d22476acb13c2cbfaa354be3968d04a1c085"
+  "built_at_commit": "85c030efdeccc05b0737d268929428b2f6534375"
 }
